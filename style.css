@@ -1,12 +1,18 @@
 :root {
-  --bg: #07111f;
-  --bg-soft: #0d1b2d;
-  --surface: #12243a;
-  --text: #f3f7fb;
-  --muted: #a9b8c7;
-  --accent: #4da3ff;
-  --accent-soft: #8cc8ff;
-  --line: rgba(255, 255, 255, 0.12);
+  --bg: #eaf2f4;
+  --bg-soft: #dce9ed;
+  --surface: #f8fbfc;
+  --text: #173044;
+  --muted: #5d7481;
+  --accent: #34748d;
+  --accent-soft: #28677f;
+  --line: rgba(23, 48, 68, 0.15);
+  --wash: rgba(23, 48, 68, 0.04);
+  --button-ink: #ffffff;
+  --glow: rgba(63, 135, 161, 0.18);
+  --glow-soft: rgba(119, 177, 194, 0.14);
+  --hero-top: #dcebef;
+  --hero-bottom: #eaf2f4;
   --max-width: 1180px;
 }
 
@@ -42,9 +48,9 @@ img {
   flex-direction: column;
   padding: 0 32px;
   background:
-    radial-gradient(circle at 75% 20%, rgba(77, 163, 255, 0.18), transparent 30%),
-    radial-gradient(circle at 20% 80%, rgba(140, 200, 255, 0.1), transparent 25%),
-    linear-gradient(180deg, #081522 0%, #07111f 100%);
+    radial-gradient(circle at 75% 20%, var(--glow), transparent 30%),
+    radial-gradient(circle at 20% 80%, var(--glow-soft), transparent 25%),
+    linear-gradient(180deg, var(--hero-top) 0%, var(--hero-bottom) 100%);
 }
 
 .nav {
@@ -146,7 +152,7 @@ img {
 
 .button-primary {
   background: var(--accent);
-  color: #04101d;
+  color: var(--button-ink);
   border-color: var(--accent);
 }
 
@@ -202,7 +208,7 @@ img {
 .card {
   min-height: 270px;
   padding: 28px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--wash);
   border: 1px solid var(--line);
   border-radius: 20px;
 }
@@ -238,7 +244,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--wash);
 }
 
 .schedule {
@@ -426,7 +432,7 @@ img {
 
 .hero-date-block {
   min-width: 155px;
-  padding-left: 26px;
+  padding-left: 6px;
   border-left: 1px solid var(--line);
   display: flex;
   flex-direction: column;
@@ -552,3 +558,58 @@ img {
   }
 }
 
+/* Full-bleed hero artwork. Replace banner.jpeg to update the image. */
+.hero {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(90deg, rgba(234, 242, 244, 0.99) 0%, rgba(234, 242, 244, 0.93) 38%, rgba(234, 242, 244, 0.48) 66%, rgba(234, 242, 244, 0.14) 100%),
+    linear-gradient(180deg, rgba(234, 242, 244, 0.22), rgba(234, 242, 244, 0.08)),
+    url("banner.jpeg") right -14.75% / 70% no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 24%;
+  z-index: -1;
+  background: linear-gradient(0deg, var(--bg), transparent);
+  pointer-events: none;
+}
+
+.nav,
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  max-width: 1760px;
+  font-size: clamp(4rem, 9vw, 8rem);
+}
+
+.hero-description {
+  max-width: 1560px;
+  color: #405d6c;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background:
+      linear-gradient(180deg, rgba(234, 242, 244, 0.97) 0%, rgba(234, 242, 244, 0.88) 48%, rgba(234, 242, 244, 0.44) 73%, rgba(234, 242, 244, 0.18) 100%),
+      url("banner.jpeg") 58% center / cover no-repeat;
+  }
+
+  .hero-content { padding-bottom: 150px; }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 100svh;
+    background-position: 56% center;
+  }
+
+  .hero h1 { font-size: clamp(3.6rem, 19vw, 5.3rem); }
+  .hero-description { color: #314f5f; }
+}
