@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("fonts/Vazirmatn-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #eaf2f4;
   --bg-soft: #dce9ed;
@@ -33,6 +41,10 @@ body {
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+html[lang="fa"] body {
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
 }
 
 .skip-link {
