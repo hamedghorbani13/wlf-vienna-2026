@@ -875,6 +875,10 @@ html[dir="rtl"] .hero h1 {
   line-height: 1;
 }
 
+html[dir="rtl"] .hero::before {
+  transform: scaleX(-1);
+}
+
 html[dir="rtl"] .principles-strip > div {
   padding-right: 0;
   padding-left: 28px;
@@ -889,9 +893,9 @@ html[dir="rtl"] .principles-strip > div + div {
 @media (min-width: 901px) {
   html[dir="rtl"] .hero::before {
     background:
-      linear-gradient(270deg, rgba(234, 242, 244, 0.99) 0%, rgba(234, 242, 244, 0.93) 38%, rgba(234, 242, 244, 0.48) 66%, rgba(234, 242, 244, 0.14) 100%),
+      linear-gradient(90deg, rgba(234, 242, 244, 0.99) 0%, rgba(234, 242, 244, 0.93) 38%, rgba(234, 242, 244, 0.48) 66%, rgba(234, 242, 244, 0.14) 100%),
       linear-gradient(180deg, rgba(234, 242, 244, 0.22), rgba(234, 242, 244, 0.08)),
-      url("banner.jpeg") left top / 70% auto no-repeat;
+      url("banner.jpeg") right top / 70% auto no-repeat;
   }
 }
 
