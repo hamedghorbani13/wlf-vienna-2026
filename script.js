@@ -4,6 +4,60 @@ const LANGUAGE_COLUMNS = {
   fa: "farsi",
 };
 
+const HERO_IMAGE_SOURCES = [
+  {
+    media: window.matchMedia("(max-width: 600px)"),
+    source: "images/banner-mobile.webp",
+  },
+  {
+    media: window.matchMedia("(max-width: 900px)"),
+    source: "images/banner-tablet.webp",
+  },
+  {
+    media: window.matchMedia("(min-width: 901px)"),
+    source: "images/banner-desktop.webp",
+  },
+];
+
+let heroImageRequest = 0;
+
+function selectHeroImage() {
+  return HERO_IMAGE_SOURCES.find(({ media }) => media.matches)?.source;
+}
+
+function loadResponsiveHeroImage() {
+  const source = selectHeroImage();
+  const request = ++heroImageRequest;
+
+  if (!source) return;
+
+  const image = new Image();
+
+  image.addEventListener("load", () => {
+    if (request !== heroImageRequest) return;
+    document.documentElement.style.setProperty("--hero-image", `url("${source}")`);
+    document.documentElement.classList.add("has-responsive-hero");
+  });
+
+  image.addEventListener("error", () => {
+    if (request !== heroImageRequest) return;
+    document.documentElement.style.removeProperty("--hero-image");
+    document.documentElement.classList.remove("has-responsive-hero");
+  });
+
+  image.src = source;
+}
+
+HERO_IMAGE_SOURCES.forEach(({ media }) => {
+  if (typeof media.addEventListener === "function") {
+    media.addEventListener("change", loadResponsiveHeroImage);
+  } else {
+    media.addListener(loadResponsiveHeroImage);
+  }
+});
+
+loadResponsiveHeroImage();
+
 let currentLanguage = getInitialLanguage();
 let translations = new Map();
 let groupRows = [];

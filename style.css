@@ -24,6 +24,11 @@
   --max-width: 1180px;
   --page-gutter: clamp(22px, 3vw, 32px);
   --nav-height: 90px;
+  --hero-art-width: 65%;
+  --hero-art-position: calc(100% + clamp(18px, 3vw, 72px));
+  --hero-art-opacity: 0.84;
+  --hero-overlay-side: linear-gradient(90deg, rgba(234, 242, 244, 0.99) 0%, rgba(234, 242, 244, 0.93) 38%, rgba(234, 242, 244, 0.48) 66%, rgba(234, 242, 244, 0.14) 100%);
+  --hero-overlay-depth: linear-gradient(180deg, rgba(234, 242, 244, 0.22), rgba(234, 242, 244, 0.08));
 }
 
 * {
@@ -313,12 +318,21 @@ img {
 
 .group-card {
   position: relative;
-  min-height: 280px;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: var(--wash);
   cursor: pointer;
+}
+
+/* Intrinsic square fallback for browsers that do not honor aspect-ratio. */
+.group-card::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
 .group-card::after {
@@ -796,7 +810,10 @@ img {
   }
 }
 
-/* Full-bleed hero artwork. Replace banner.jpeg to update the image. */
+/*
+ * Full-bleed hero artwork. Responsive crops are loaded by script.js when
+ * available; banner.jpeg remains the automatic fallback.
+ */
 .hero {
   position: relative;
   isolation: isolate;
@@ -809,9 +826,10 @@ img {
   inset: var(--nav-height) 0 0;
   z-index: -2;
   background:
-    linear-gradient(90deg, rgba(234, 242, 244, 0.99) 0%, rgba(234, 242, 244, 0.93) 38%, rgba(234, 242, 244, 0.48) 66%, rgba(234, 242, 244, 0.14) 100%),
-    linear-gradient(180deg, rgba(234, 242, 244, 0.22), rgba(234, 242, 244, 0.08)),
-    url("banner.jpeg") right top / 70% auto no-repeat;
+    var(--hero-overlay-side),
+    var(--hero-overlay-depth),
+    var(--hero-image, url("banner.jpeg")) var(--hero-art-position) top / var(--hero-art-width) auto no-repeat;
+  opacity: var(--hero-art-opacity);
   pointer-events: none;
 }
 
@@ -844,8 +862,9 @@ img {
 @media (max-width: 900px) {
   .hero::before {
     background:
-      linear-gradient(180deg, rgba(234, 242, 244, 0.97) 0%, rgba(234, 242, 244, 0.88) 48%, rgba(234, 242, 244, 0.44) 73%, rgba(234, 242, 244, 0.18) 100%),
-      url("banner.jpeg") 58% center / cover no-repeat;
+      var(--hero-overlay-side),
+      var(--hero-overlay-depth),
+      var(--hero-image, url("banner.jpeg")) 48% center / cover no-repeat;
   }
 
   .hero-content { padding-bottom: 150px; }
@@ -853,7 +872,7 @@ img {
 
 @media (max-width: 600px) {
   .hero::before {
-    background-position: center, 56% center;
+    background-position: center, center, 16% center;
   }
 
   .hero h1 { font-size: clamp(3.6rem, 19vw, 5.3rem); }
@@ -893,10 +912,17 @@ html[dir="rtl"] .principles-strip > div + div {
 @media (min-width: 901px) {
   html[dir="rtl"] .hero::before {
     background:
-      linear-gradient(90deg, rgba(234, 242, 244, 0.99) 0%, rgba(234, 242, 244, 0.93) 38%, rgba(234, 242, 244, 0.48) 66%, rgba(234, 242, 244, 0.14) 100%),
-      linear-gradient(180deg, rgba(234, 242, 244, 0.22), rgba(234, 242, 244, 0.08)),
-      url("banner.jpeg") right top / 70% auto no-repeat;
+      var(--hero-overlay-side),
+      var(--hero-overlay-depth),
+      var(--hero-image, url("banner.jpeg")) var(--hero-art-position) top / var(--hero-art-width) auto no-repeat;
   }
+}
+
+/* Dedicated crops already have the intended composition, so they fill the
+   artwork area without inheriting offsets needed by the portrait fallback. */
+html.has-responsive-hero .hero::before {
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 800px) {
