@@ -11,6 +11,13 @@ The file has four columns:
 
 Keep every `location` value unchanged and unique. You may freely edit the three language columns. If a translation is empty, the page falls back to English.
 
+## External links
+
+External destinations are stored separately in `links.csv`. To activate the
+volunteer button, paste the complete Google Form URL into the `url` column for
+`participate.volunteer`. Leave it blank until the form is ready; the button
+will remain disabled instead of sending visitors to a broken page.
+
 ## Group-card text
 
 Group text uses four rows per group:

@@ -123,6 +123,40 @@ function translate(location, fallback = "") {
   return entry[LANGUAGE_COLUMNS[currentLanguage]] || entry.english || fallback;
 }
 
+function validExternalUrl(value) {
+  if (!value) return "";
+
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
+function applySiteLinks(rows) {
+  const links = new Map(rows.map((row) => [row.location, validExternalUrl(row.url)]));
+
+  document.querySelectorAll("[data-site-link]").forEach((link) => {
+    const url = links.get(link.dataset.siteLink);
+
+    if (!url) {
+      link.removeAttribute("href");
+      link.removeAttribute("target");
+      link.removeAttribute("rel");
+      link.setAttribute("aria-disabled", "true");
+      link.classList.add("is-disabled");
+      return;
+    }
+
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.removeAttribute("aria-disabled");
+    link.classList.remove("is-disabled");
+  });
+}
+
 function applyTranslations() {
   const isFarsi = currentLanguage === "fa";
   document.documentElement.lang = currentLanguage;
@@ -167,6 +201,58 @@ function setLanguage(language) {
 document.querySelectorAll("[data-language]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
 });
+
+const calendarMenu = document.querySelector(".calendar-menu");
+
+if (calendarMenu) {
+  const trigger = calendarMenu.querySelector(".calendar-trigger");
+  const options = calendarMenu.querySelector(".calendar-options");
+  const items = Array.from(calendarMenu.querySelectorAll('[role="menuitem"]'));
+
+  const setCalendarMenuOpen = (open, focusFirst = false) => {
+    trigger.setAttribute("aria-expanded", String(open));
+    options.hidden = !open;
+    if (open && focusFirst) items[0]?.focus();
+  };
+
+  trigger.addEventListener("click", () => {
+    setCalendarMenuOpen(trigger.getAttribute("aria-expanded") !== "true");
+  });
+
+  trigger.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowDown") return;
+    event.preventDefault();
+    setCalendarMenuOpen(true, true);
+  });
+
+  options.addEventListener("keydown", (event) => {
+    const currentIndex = items.indexOf(document.activeElement);
+    let nextIndex;
+
+    if (event.key === "ArrowDown") nextIndex = (currentIndex + 1) % items.length;
+    if (event.key === "ArrowUp") nextIndex = (currentIndex - 1 + items.length) % items.length;
+    if (event.key === "Home") nextIndex = 0;
+    if (event.key === "End") nextIndex = items.length - 1;
+
+    if (nextIndex === undefined) return;
+    event.preventDefault();
+    items[nextIndex]?.focus();
+  });
+
+  items.forEach((item) => {
+    item.addEventListener("click", () => setCalendarMenuOpen(false));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!calendarMenu.contains(event.target)) setCalendarMenuOpen(false);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || trigger.getAttribute("aria-expanded") !== "true") return;
+    setCalendarMenuOpen(false);
+    trigger.focus();
+  });
+}
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -380,6 +466,13 @@ async function loadGroups() {
   renderGroups();
 }
 
+async function loadSiteLinks() {
+  const response = await fetch("links.csv", { cache: "no-store" });
+  if (!response.ok) throw new Error(`Could not load links.csv (${response.status})`);
+
+  applySiteLinks(parseCsv(await response.text()).filter((row) => row.location));
+}
+
 async function initializePage() {
   const status = document.querySelector("#groups-status");
 
@@ -388,6 +481,12 @@ async function initializePage() {
   } catch (error) {
     console.error(error);
     applyTranslations();
+  }
+
+  try {
+    await loadSiteLinks();
+  } catch (error) {
+    console.error(error);
   }
 
   try {

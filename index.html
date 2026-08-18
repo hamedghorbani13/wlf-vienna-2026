@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Woman, Life, Freedom — Vienna 2026</title>
   <meta name="description" content="Woman, Life, Freedom — Fourth Anniversary Community Fair & Civic Forum in Vienna, 15 September 2026." />
-  <link rel="stylesheet" href="style.css?v=20260816-unified-banner-opacity" />
+  <link rel="stylesheet" href="style.css?v=20260818-calendar-link-style" />
 </head>
 
 <body id="top">
@@ -32,7 +32,21 @@
     </nav>
 
     <div class="hero-content">
-      <p class="eyebrow" data-i18n="hero.eyebrow">Vienna · 15 September 2026</p>
+      <div class="hero-meta">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Vienna · 15 September 2026</p>
+        <div class="calendar-menu">
+          <button class="calendar-trigger" type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="calendar-options">
+            <span data-i18n="hero.action.calendar">Save to calendar</span>
+            <svg aria-hidden="true" viewBox="0 0 12 8" width="12" height="8"><path d="M1 1.25 6 6.25l5-5" /></svg>
+          </button>
+
+          <div id="calendar-options" class="calendar-options" role="menu" hidden>
+            <a role="menuitem" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;dates=20260915%2F20260916&amp;details=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Near%20the%20Vienna%20International%20Centre%2C%20Vienna" target="_blank" rel="noopener noreferrer" data-i18n="calendar.google">Google Calendar</a>
+            <a role="menuitem" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;subject=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;startdt=2026-09-15&amp;enddt=2026-09-16&amp;allday=true&amp;body=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Near%20the%20Vienna%20International%20Centre%2C%20Vienna" target="_blank" rel="noopener noreferrer" data-i18n="calendar.outlook">Outlook / Microsoft 365</a>
+            <a role="menuitem" href="event.ics" download="wlf-vienna-2026.ics" data-i18n="calendar.other">Apple / Other calendar</a>
+          </div>
+        </div>
+      </div>
       <p class="anniversary-mark" data-i18n="hero.anniversary">FOUR YEARS ON</p>
 
       <h1>
@@ -128,7 +142,7 @@
       <h2 data-i18n="participate.title">Bring more than your presence.</h2>
       <p class="section-intro" data-i18n="participate.intro">Volunteer, contribute your skills, present an initiative, or help make the event possible.</p>
       <div class="hero-actions">
-        <a href="#" class="button button-primary" data-i18n="participate.volunteer">Volunteer</a>
+        <a class="button button-primary is-disabled" data-site-link="participate.volunteer" aria-disabled="true" data-i18n="participate.volunteer">Become a volunteer</a>
         <a href="#" class="button button-secondary" data-i18n="participate.booth">Apply for a booth</a>
       </div>
     </section>
@@ -150,6 +164,6 @@
     <p data-i18n="footer.note">Event details subject to confirmation.</p>
   </footer>
 
-  <script src="script.js?v=20260816-responsive-banners"></script>
+  <script src="script.js?v=20260818-calendar-menu"></script>
 </body>
 </html>

@@ -21,15 +21,19 @@ hero.subtitle,Community Fair & Civic Forum,Gemeinschaftsmesse & Bürgerforum,ن�
 hero.description,Remembering the movement. Meeting the people behind the work. Building connections for what comes next.,Der Bewegung gedenken. Die Menschen hinter der Arbeit kennenlernen. Verbindungen für die Zukunft schaffen.,یادآوری جنبش. آشنایی با افراد پشت این تلاش‌ها. ایجاد ارتباط برای آنچه در پیش است.
 hero.action.explore,Explore the event,Veranstaltung entdecken,آشنایی با رویداد
 hero.action.participate,Get involved,Mitmachen,مشارکت کنید
+hero.action.calendar,Save to calendar,Zum Kalender hinzufügen,افزودن به تقویم
+calendar.google,Google Calendar,Google Kalender,تقویم گوگل
+calendar.outlook,Outlook / Microsoft 365,Outlook / Microsoft 365,اوت‌لوک / مایکروسافت ۳۶۵
+calendar.other,Apple / Other calendar,Apple / anderer Kalender,اپل / تقویم دیگر
 about.label,About the event,Über die Veranstaltung,درباره رویداد
 about.title,From visibility to connection.,Von Sichtbarkeit zu Verbindung.,از دیده‌شدن تا پیوند.
-about.intro,"Four years after the beginning of Woman, Life, Freedom, we come together not only to remember, but also to connect.","Vier Jahre nach dem Beginn von Frau, Leben, Freiheit kommen wir zusammen — nicht nur, um zu erinnern, sondern auch, um uns zu vernetzen.","چهار سال پس از آغاز زن، زندگی، آزادی گرد هم می‌آییم؛ نه فقط برای یادآوری، بلکه برای پیوند با یکدیگر."
-about.body.1,"This event brings civil-society organizations, activists, professionals, artists, political groups, and members of the wider community into one shared space.","Diese Veranstaltung bringt zivilgesellschaftliche Organisationen, Aktivist:innen, Fachleute, Kunstschaffende, politische Gruppen und die breitere Gemeinschaft an einem gemeinsamen Ort zusammen.","این رویداد سازمان‌های جامعه مدنی، کنشگران، متخصصان، هنرمندان، گروه‌های سیاسی و اعضای جامعه گسترده‌تر را در فضایی مشترک گرد هم می‌آورد."
-about.body.2,"Instead of focusing only on speeches and symbolic presence, the day is designed around direct exchange: meeting organizations, discovering resources, sharing knowledge, contributing skills, and creating possibilities for future cooperation.","Statt sich nur auf Reden und symbolische Präsenz zu konzentrieren, steht der direkte Austausch im Mittelpunkt: Organisationen kennenlernen, Ressourcen entdecken, Wissen teilen, Fähigkeiten einbringen und Möglichkeiten für künftige Zusammenarbeit schaffen.","به‌جای تمرکز صرف بر سخنرانی‌ها و حضور نمادین، این روز بر تبادل مستقیم بنا شده است: آشنایی با سازمان‌ها، کشف منابع، به‌اشتراک‌گذاری دانش، ارائه مهارت‌ها و ایجاد امکان همکاری‌های آینده."
+about.intro,"Four years after the beginning of Woman, Life, Freedom, we come together not only to remember, but also to connect.","Vier Jahre nach dem Beginn von Frau, Leben, Freiheit kommen wir zusammen — nicht nur, um zu erinnern, sondern auch, um uns zu vernetzen.","چهار سال پس از آغاز زن، زندگی، آزادی گرد هم می‌آییم؛ برای یادآوری و تقویت پیوندهای با یکدیگر."
+about.body.1,"This event brings civil-society organizations, activists, professionals, artists, political groups, and members of the wider community into one shared space.","Diese Veranstaltung bringt zivilgesellschaftliche Organisationen, Aktivist:innen, Fachleute, Kunstschaffende, politische Gruppen und die breitere Gemeinschaft an einem gemeinsamen Ort zusammen.","این رویداد سازمان‌های جامعه مدنی، کنشگران، متخصصان، هنرمندان، گروه‌های سیاسی و شهروندان را در فضایی مشترک گرد هم می‌آورد."
+about.body.2,"Instead of focusing only on speeches and symbolic presence, the day is designed around direct exchange: meeting organizations, discovering resources, sharing knowledge, contributing skills, and creating possibilities for future cooperation.","Statt sich nur auf Reden und symbolische Präsenz zu konzentrieren, steht der direkte Austausch im Mittelpunkt: Organisationen kennenlernen, Ressourcen entdecken, Wissen teilen, Fähigkeiten einbringen und Möglichkeiten für künftige Zusammenarbeit schaffen.","علاوه بر حضور نمادین، این روز بر تبادل نظر مستقیم بنا شده است: آشنایی با فعالیت های گروه های مختلف، و ایجاد امکان همکاری‌های آینده."
 about.principle.1.title,Remember,Erinnern,یادآوری
-about.principle.1.body,Honor those affected by repression and preserve the movement’s memory.,Die von Repression Betroffenen würdigen und die Erinnerung an die Bewegung bewahren.,گرامیداشت آسیب‌دیدگان سرکوب و حفظ یاد جنبش.
+about.principle.1.body,Honor those affected by repression and preserve the movement’s memory.,Die von Repression Betroffenen würdigen und die Erinnerung an die Bewegung bewahren.,"گرامیداشت آسیب‌دیدگان سرکوب و یادبود جنبش زن، زندگی، آزادی."
 about.principle.2.title,Connect,Vernetzen,پیوند
-about.principle.2.body,"Bring organizations, professionals, artists, and communities together.","Organisationen, Fachleute, Kunstschaffende und Gemeinschaften zusammenbringen.","گرد هم آوردن سازمان‌ها، متخصصان، هنرمندان و جوامع."
+about.principle.2.body,"Bring organizations, professionals, artists, and communities together.","Organisationen, Fachleute, Kunstschaffende und Gemeinschaften zusammenbringen.","گرد هم آوردن گروه ها، متخصصان، هنرمندان و افراد."
 about.principle.3.title,Participate,Mitwirken,مشارکت
 about.principle.3.body,Create practical ways for visitors to contribute beyond the event itself.,"Praktische Möglichkeiten schaffen, sich auch über die Veranstaltung hinaus einzubringen.",ایجاد راه‌های عملی برای مشارکت بازدیدکنندگان فراتر از خود رویداد.
 features.label,What you'll find,Was Sie erwartet,آنچه خواهید یافت
@@ -69,7 +73,7 @@ program.4.body,Placeholder closing time.,Vorläufige Schlusszeit.,زمان مو�
 participate.label,Participate,Mitwirken,مشارکت
 participate.title,Bring more than your presence.,Bringen Sie mehr als Ihre Anwesenheit ein.,فراتر از حضورتان مشارکت کنید.
 participate.intro,"Volunteer, contribute your skills, present an initiative, or help make the event possible.","Engagieren Sie sich ehrenamtlich, bringen Sie Ihre Fähigkeiten ein, stellen Sie eine Initiative vor oder helfen Sie, die Veranstaltung möglich zu machen.","داوطلب شوید، مهارت‌هایتان را ارائه دهید، ابتکاری را معرفی کنید یا به برگزاری رویداد کمک کنید."
-participate.volunteer,Volunteer,Freiwillig mithelfen,داوطلب شوید
+participate.volunteer,Become a volunteer,Freiwillig mithelfen,داوطلب شوید
 participate.booth,Apply for a booth,Für einen Stand bewerben,درخواست غرفه
 location.label,Practical information,Praktische Informationen,اطلاعات کاربردی
 location.title,Vienna · 15 September 2026,Wien · 15. September 2026,وین - ۱۵ سپتامبر ۲۰۲۶

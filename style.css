@@ -158,6 +158,8 @@ img {
 .nav-links a:focus-visible,
 .brand:focus-visible,
 .language-switcher button:focus-visible,
+.calendar-trigger:focus-visible,
+.calendar-options a:focus-visible,
 .button:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
@@ -169,6 +171,99 @@ img {
   max-width: var(--max-width);
   margin: auto;
   padding: clamp(64px, 8vw, 96px) 0 clamp(88px, 10vw, 128px);
+}
+
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.hero-meta .eyebrow {
+  margin: 0;
+}
+
+.calendar-menu {
+  position: relative;
+  align-self: flex-start;
+}
+
+.calendar-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent-soft);
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: start;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.calendar-trigger:hover,
+.calendar-trigger[aria-expanded="true"] {
+  background: transparent;
+  color: var(--text);
+  box-shadow: none;
+}
+
+.calendar-trigger svg {
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+  transition: transform 0.2s ease;
+}
+
+.calendar-trigger[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.calendar-options {
+  position: absolute;
+  inset-block-start: calc(100% + 8px);
+  inset-inline-start: 0;
+  z-index: 20;
+  min-width: 240px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(248, 251, 252, 0.98);
+  box-shadow: 0 14px 36px rgba(23, 48, 68, 0.16);
+  backdrop-filter: blur(12px);
+}
+
+.calendar-options a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.calendar-options a:hover,
+.calendar-options a:focus-visible {
+  background: rgba(52, 116, 141, 0.11);
 }
 
 .eyebrow,
@@ -228,6 +323,13 @@ img {
 
 .button:hover {
   transform: translateY(-2px);
+}
+
+.button.is-disabled,
+.button.is-disabled:hover {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .button-primary {
