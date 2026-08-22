@@ -1,6 +1,6 @@
 # Editing website text and translations
 
-All visible website text is stored in `content.csv`. Open it in Excel and save changes using **CSV UTF-8 (Comma delimited)** so German and Farsi characters remain intact.
+Site-wide interface text is stored in `content.csv`. Open it in Excel and save changes using **CSV UTF-8 (Comma delimited)** so German and Farsi characters remain intact.
 
 The file has four columns:
 
@@ -28,6 +28,10 @@ Group text uses four rows per group:
 - `group.01.contact`
 
 The number corresponds to the row order in `groups.csv`. For example, the second group uses the `group.02.*` rows. Logos and contact URLs remain in `groups.csv` because they are not translated.
+
+## Program timeline
+
+Program times, titles, descriptions, and their translations are stored in `program.csv`. See `PROGRAM.md` for its columns and editing workflow.
 
 ## Local preview
 

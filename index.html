@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Woman, Life, Freedom — Vienna 2026</title>
   <meta name="description" content="Woman, Life, Freedom — Fourth Anniversary Community Fair & Civic Forum in Vienna, 15 September 2026." />
-  <link rel="stylesheet" href="style.css?v=20260822-design-feedback" />
+  <link rel="stylesheet" href="style.css?v=20260822-csv-program" />
 </head>
 
 <body id="top">
@@ -130,12 +130,9 @@
     <section id="program" class="section">
       <p class="section-label" data-i18n="program.label">Program</p>
       <h2 data-i18n="program.title">Program coming soon.</h2>
-      <div class="schedule">
-        <div class="schedule-row"><time>13:00</time><div><h3 data-i18n="program.1.title">Opening & Memorial</h3><p data-i18n="program.1.body">Placeholder program item</p></div></div>
-        <div class="schedule-row"><time>13:30</time><div><h3 data-i18n="program.2.title">Community Fair Opens</h3><p data-i18n="program.2.body">Meet participating organizations and initiatives.</p></div></div>
-        <div class="schedule-row"><time>14:00</time><div><h3 data-i18n="program.3.title">Workshops & Conversations</h3><p data-i18n="program.3.body">Short sessions throughout the afternoon.</p></div></div>
-        <div class="schedule-row"><time>18:00</time><div><h3 data-i18n="program.4.title">Closing</h3><p data-i18n="program.4.body">Placeholder closing time.</p></div></div>
-      </div>
+      <div id="program-schedule" class="schedule" aria-live="polite"></div>
+      <p id="program-status" class="program-status" data-i18n="program.loading">Loading program…</p>
+      <noscript><p class="program-status" data-i18n="program.javascript_required">JavaScript is required to display the program.</p></noscript>
     </section>
 
     <section id="participate" class="section">
@@ -179,6 +176,6 @@
     <p data-i18n="footer.note">Event details subject to confirmation.</p>
   </footer>
 
-  <script src="script.js?v=20260818-calendar-menu"></script>
+  <script src="script.js?v=20260822-csv-program"></script>
 </body>
 </html>

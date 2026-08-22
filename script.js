@@ -61,6 +61,7 @@ loadResponsiveHeroImage();
 let currentLanguage = getInitialLanguage();
 let translations = new Map();
 let groupRows = [];
+let programRows = [];
 
 function getInitialLanguage() {
   try {
@@ -196,6 +197,7 @@ function setLanguage(language) {
 
   applyTranslations();
   renderGroups();
+  renderProgram();
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => {
@@ -448,6 +450,48 @@ function renderGroups() {
   observeReveal(cards);
 }
 
+function programValue(item, field) {
+  const language = LANGUAGE_COLUMNS[currentLanguage];
+  return item[`${field}_${language}`] || item[`${field}_english`] || "";
+}
+
+function createScheduleRow(item) {
+  const row = document.createElement("div");
+  row.className = "schedule-row";
+
+  const time = document.createElement("time");
+  time.textContent = item.time;
+  if (/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(item.time)) {
+    time.dateTime = item.time;
+  }
+
+  const content = document.createElement("div");
+  const title = document.createElement("h3");
+  title.textContent = programValue(item, "title");
+  content.append(title);
+
+  const body = programValue(item, "body");
+  if (body) {
+    const description = document.createElement("p");
+    description.textContent = body;
+    content.append(description);
+  }
+
+  row.append(time, content);
+  return row;
+}
+
+function renderProgram() {
+  const schedule = document.querySelector("#program-schedule");
+  const status = document.querySelector("#program-status");
+  if (!schedule || !status || !programRows.length) return;
+
+  const items = programRows.map(createScheduleRow);
+  schedule.replaceChildren(...items);
+  status.hidden = true;
+  observeReveal(items);
+}
+
 async function loadContent() {
   const response = await fetch("content.csv", { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load content.csv (${response.status})`);
@@ -466,6 +510,17 @@ async function loadGroups() {
   renderGroups();
 }
 
+async function loadProgram() {
+  const response = await fetch("program.csv", { cache: "no-store" });
+  if (!response.ok) throw new Error(`Could not load program.csv (${response.status})`);
+
+  programRows = parseCsv(await response.text()).filter(
+    (item) => item.time && (item.title_english || item.title_german || item.title_farsi)
+  );
+  if (!programRows.length) throw new Error("program.csv does not contain any program rows");
+  renderProgram();
+}
+
 async function loadSiteLinks() {
   const response = await fetch("links.csv", { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load links.csv (${response.status})`);
@@ -474,7 +529,8 @@ async function loadSiteLinks() {
 }
 
 async function initializePage() {
-  const status = document.querySelector("#groups-status");
+  const groupsStatus = document.querySelector("#groups-status");
+  const programStatus = document.querySelector("#program-status");
 
   try {
     await loadContent();
@@ -490,14 +546,36 @@ async function initializePage() {
   }
 
   try {
+    await loadProgram();
+  } catch (error) {
+    console.error(error);
+    if (programStatus) {
+      const location = window.location.protocol === "file:"
+        ? "program.local_error"
+        : "program.load_error";
+      const fallback = window.location.protocol === "file:"
+        ? "To load CSV files locally, preview this folder through a local web server."
+        : "The program could not be loaded. Please try again later.";
+      programStatus.hidden = false;
+      programStatus.dataset.i18n = location;
+      programStatus.textContent = translate(location, fallback);
+    }
+  }
+
+  try {
     await loadGroups();
   } catch (error) {
     console.error(error);
-    if (status) {
-      status.hidden = false;
-      status.textContent = window.location.protocol === "file:"
-        ? translate("groups.local_error", "To load CSV files locally, preview this folder through a local web server.")
-        : translate("groups.load_error", "Participating groups could not be loaded. Please try again later.");
+    if (groupsStatus) {
+      const location = window.location.protocol === "file:"
+        ? "groups.local_error"
+        : "groups.load_error";
+      const fallback = window.location.protocol === "file:"
+        ? "To load CSV files locally, preview this folder through a local web server."
+        : "Participating groups could not be loaded. Please try again later.";
+      groupsStatus.hidden = false;
+      groupsStatus.dataset.i18n = location;
+      groupsStatus.textContent = translate(location, fallback);
     }
   }
 }
