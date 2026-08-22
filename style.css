@@ -16,6 +16,8 @@
   --accent-soft: #28677f;
   --line: rgba(23, 48, 68, 0.15);
   --wash: rgba(23, 48, 68, 0.04);
+  --card-lavender: #e5e3ef;
+  --card-sand: #eee4d8;
   --button-ink: #ffffff;
   --glow: rgba(63, 135, 161, 0.18);
   --glow-soft: rgba(119, 177, 194, 0.14);
@@ -170,20 +172,24 @@ img {
   width: 100%;
   max-width: var(--max-width);
   margin: auto;
-  padding: clamp(64px, 8vw, 96px) 0 clamp(88px, 10vw, 128px);
+  padding: clamp(54px, 7vw, 84px) 0 clamp(72px, 8vw, 104px);
 }
 
 .hero-meta {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
-  margin-bottom: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-top: 24px;
 }
 
 .hero-meta .eyebrow {
   margin: 0;
+}
+
+.hero-meta .calendar-menu {
+  padding-inline-start: 20px;
+  border-inline-start: 1px solid var(--line);
 }
 
 .calendar-menu {
@@ -276,6 +282,22 @@ img {
   font-weight: 700;
 }
 
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(100%, 360px);
+  font-size: 0.82rem;
+}
+
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.38;
+}
+
 .hero h1 {
   margin: 0;
   max-width: 850px;
@@ -339,12 +361,14 @@ img {
 }
 
 .button-secondary {
-  background: transparent;
+  background: rgba(248, 251, 252, 0.76);
   color: var(--text);
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(23, 48, 68, 0.08);
 }
 
 .section {
-  padding: clamp(76px, 9vw, 110px) var(--page-gutter);
+  padding: clamp(64px, 7vw, 90px) var(--page-gutter);
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -393,6 +417,14 @@ img {
   background: var(--wash);
   border: 1px solid var(--line);
   border-radius: 20px;
+}
+
+.features-section .card:nth-child(odd) {
+  background: var(--card-lavender);
+}
+
+.features-section .card:nth-child(even) {
+  background: var(--card-sand);
 }
 
 .card span {
@@ -444,8 +476,8 @@ img {
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(234, 242, 244, 0.46),
-    rgba(234, 242, 244, 0.76)
+    rgba(234, 242, 244, 0.1),
+    rgba(234, 242, 244, 0.24)
   );
   pointer-events: none;
 }
@@ -460,7 +492,7 @@ img {
   object-fit: fill;
   object-position: center;
   filter: blur(0.05px);
-  opacity: 0.8;
+  opacity: 0.98;
   transform: scale(1);
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease;
@@ -521,7 +553,7 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   overflow-y: auto;
-  background: rgba(248, 251, 252, 0.16);
+  background: rgba(248, 251, 252, 0.56);
   text-align: start;
   opacity: 0;
   visibility: hidden;
@@ -560,7 +592,7 @@ img {
 .group-card:hover .group-card-background,
 .group-card:focus-within .group-card-background,
 .group-card.is-open .group-card-background {
-  opacity: 0.26;
+  opacity: 0.55;
   transform: scale(1);
 }
 
@@ -578,22 +610,59 @@ img {
 }
 
 .schedule {
-  margin-top: 60px;
-  border-top: 1px solid var(--line);
+  --timeline-column: 104px;
+  position: relative;
+  margin-top: 48px;
+}
+
+.schedule::before {
+  content: "";
+  position: absolute;
+  inset-block: 24px 46px;
+  inset-inline-start: var(--timeline-column);
+  width: 2px;
+  background: linear-gradient(var(--accent), rgba(52, 116, 141, 0.18));
 }
 
 .schedule-row {
+  position: relative;
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 30px;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: var(--timeline-column) minmax(0, 1fr);
+  gap: 34px;
+  padding: 0 0 22px;
+}
+
+.schedule-row::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 22px;
+  inset-inline-start: var(--timeline-column);
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  border: 3px solid var(--bg);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+  transform: translate(-50%, -50%);
 }
 
 .schedule-row time {
-  font-size: 1rem;
+  padding-top: 10px;
+  font-size: 0.92rem;
   color: var(--accent-soft);
   font-weight: 700;
+  text-align: start;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.schedule-row > div {
+  padding: 17px 20px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(248, 251, 252, 0.66);
+  box-shadow: 0 10px 28px rgba(23, 48, 68, 0.05);
 }
 
 .schedule-row h3 {
@@ -609,12 +678,26 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  margin-top: 50px;
+  margin-top: 44px;
 }
 
 .info-grid > div {
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.info-icon {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #8fc5d3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
 }
 
 .info-grid strong {
@@ -631,16 +714,34 @@ img {
 }
 
 .section-location {
-  padding-bottom: 130px;
+  max-width: none;
+  padding-block: clamp(70px, 8vw, 104px);
+  background: var(--text);
+  color: #f8fbfc;
+}
+
+.section-location-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-location .section-label,
+.section-location .info-grid strong {
+  color: #8fc5d3;
+}
+
+.section-location .info-grid p {
+  color: rgba(248, 251, 252, 0.78);
 }
 
 .footer {
   padding: 34px var(--page-gutter);
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: #102638;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  color: var(--muted);
+  color: rgba(248, 251, 252, 0.66);
   font-size: 0.9rem;
 }
 
@@ -712,11 +813,22 @@ img {
   }
 
   .hero-content {
-    padding: 64px 0 88px;
+    padding: 48px 0 68px;
   }
 
   .hero h1 {
     font-size: clamp(3.6rem, 19vw, 5.3rem);
+  }
+
+  .button {
+    min-height: 42px;
+    padding-inline: 14px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .hero-actions {
+    gap: 10px;
   }
 
   .card-grid,
@@ -725,9 +837,22 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .schedule {
+    --timeline-column: 56px;
+    margin-top: 38px;
+  }
+
   .schedule-row {
-    grid-template-columns: 1fr;
-    gap: 8px;
+    grid-template-columns: var(--timeline-column) minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .schedule-row time {
+    font-size: 0.8rem;
+  }
+
+  .schedule-row > div {
+    padding: 15px 16px;
   }
 
   .footer {
@@ -765,10 +890,10 @@ img {
 }
 
 .anniversary-mark {
-  margin: 0 0 28px;
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  font-weight: 800;
-  letter-spacing: 0.28em;
+  margin: 0 0 24px;
+  font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+  font-weight: 900;
+  letter-spacing: 0.24em;
   color: var(--text);
 }
 
@@ -777,7 +902,7 @@ img {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 80px;
   align-items: end;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .hero-bottom .hero-subtitle {
@@ -894,11 +1019,12 @@ img {
 @media (max-width: 800px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
   }
 
   .principles-strip {
     grid-template-columns: 1fr;
+    margin-top: 56px;
   }
 
   .principles-strip > div {
@@ -969,7 +1095,7 @@ img {
       var(--hero-image, url("banner.jpeg")) 48% center / cover no-repeat;
   }
 
-  .hero-content { padding-bottom: 150px; }
+  .hero-content { padding-bottom: 88px; }
 }
 
 @media (max-width: 600px) {
@@ -977,8 +1103,36 @@ img {
     background-position: center, center, 16% center;
   }
 
-  .hero h1 { font-size: clamp(3.6rem, 19vw, 5.3rem); }
+  .hero h1 { font-size: clamp(3.35rem, 18vw, 5rem); }
   .hero-description { color: #314f5f; }
+
+  .section {
+    padding-block: 48px;
+  }
+
+  .hero-content {
+    padding-bottom: 48px;
+  }
+
+  .card-grid,
+  .logo-grid {
+    margin-top: 40px;
+  }
+
+  .hero-meta {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hero-meta .calendar-menu {
+    flex-basis: 100%;
+    padding-inline-start: 0;
+    border-inline-start: 0;
+  }
+
+  .anniversary-mark {
+    font-size: 1.08rem;
+  }
 }
 
 section[id] {
@@ -992,8 +1146,16 @@ html[dir="rtl"] .anniversary-mark {
 }
 
 html[dir="rtl"] .hero h1 {
-  letter-spacing: -0.02em;
-  line-height: 1;
+  letter-spacing: 0;
+  line-height: 1.12;
+}
+
+html[dir="rtl"] .schedule-row::before {
+  transform: translate(50%, -50%);
+}
+
+html[dir="rtl"] .info-grid strong {
+  letter-spacing: 0;
 }
 
 html[dir="rtl"] .hero::before {
