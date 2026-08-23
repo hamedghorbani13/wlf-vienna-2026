@@ -451,7 +451,7 @@ function renderGroups() {
 }
 
 async function loadContent() {
-  const response = await fetch("content.csv", { cache: "no-store" });
+  const response = await fetch("content.csv?v=20260824-location-fix", { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load content.csv (${response.status})`);
 
   const rows = parseCsv(await response.text()).filter((row) => row.location);
