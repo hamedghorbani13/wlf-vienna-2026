@@ -34,6 +34,8 @@ The site currently shows only the confirmed event time, 14:00–19:00. `program.
 
 ## Local preview
 
+The website automatically adds a fresh cache-busting query to every active CSV request (`content.csv`, `groups.csv`, and `links.csv`) so published content updates are not hidden by an older CDN copy.
+
 Browsers block CSV loading when `index.html` is opened directly. From the landing-page folder, run:
 
 ```powershell

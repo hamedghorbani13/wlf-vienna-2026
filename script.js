@@ -4,6 +4,16 @@ const LANGUAGE_COLUMNS = {
   fa: "farsi",
 };
 
+// CSV files are editable content, so give every page load a fresh same-origin
+// URL instead of allowing a CDN to serve an older published revision.
+const CSV_CACHE_VERSION = Date.now().toString();
+
+function csvUrl(filename) {
+  const url = new URL(filename, document.baseURI);
+  url.searchParams.set("v", CSV_CACHE_VERSION);
+  return url.href;
+}
+
 const HERO_IMAGE_SOURCES = [
   {
     media: window.matchMedia("(max-width: 600px)"),
@@ -451,7 +461,7 @@ function renderGroups() {
 }
 
 async function loadContent() {
-  const response = await fetch("content.csv?v=20260824-location-fix", { cache: "no-store" });
+  const response = await fetch(csvUrl("content.csv"), { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load content.csv (${response.status})`);
 
   const rows = parseCsv(await response.text()).filter((row) => row.location);
@@ -460,7 +470,7 @@ async function loadContent() {
 }
 
 async function loadGroups() {
-  const response = await fetch("groups.csv?v=20260823-utf8-fix", { cache: "no-store" });
+  const response = await fetch(csvUrl("groups.csv"), { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load groups.csv (${response.status})`);
 
   groupRows = parseCsv(await response.text()).filter((group) => group.key || group.name);
@@ -469,7 +479,7 @@ async function loadGroups() {
 }
 
 async function loadSiteLinks() {
-  const response = await fetch("links.csv", { cache: "no-store" });
+  const response = await fetch(csvUrl("links.csv"), { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load links.csv (${response.status})`);
 
   applySiteLinks(parseCsv(await response.text()).filter((row) => row.location));
