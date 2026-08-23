@@ -1,6 +1,6 @@
 # Updating the event program
 
-The timeline is generated from `program.csv`. Add, remove, or reorder rows in that file to update the website; no HTML or JavaScript changes are needed.
+The detailed timeline is temporarily disabled because only the confirmed event time (14:00–19:00) is known. The website does not currently load `program.csv`; keep it as a draft for when the detailed schedule is confirmed.
 
 ## Excel workflow
 

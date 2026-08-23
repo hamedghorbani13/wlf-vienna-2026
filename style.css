@@ -81,8 +81,7 @@ img {
 }
 
 .hero {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   padding: 0 var(--page-gutter);
@@ -171,8 +170,8 @@ img {
 .hero-content {
   width: 100%;
   max-width: var(--max-width);
-  margin: auto;
-  padding: clamp(54px, 7vw, 84px) 0 clamp(72px, 8vw, 104px);
+  margin: 0 auto;
+  padding: clamp(44px, 5vw, 64px) 0 clamp(48px, 5vw, 68px);
 }
 
 .hero-meta {
@@ -368,7 +367,7 @@ img {
 }
 
 .section {
-  padding: clamp(64px, 7vw, 90px) var(--page-gutter);
+  padding: clamp(36px, 3.8vw, 50px) var(--page-gutter);
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -387,15 +386,15 @@ img {
 .section h2 {
   margin: 0;
   max-width: 850px;
-  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-size: clamp(2.15rem, 4.2vw, 4rem);
   line-height: 1;
   letter-spacing: -0.045em;
 }
 
 .section-intro {
   max-width: 800px;
-  margin-top: 34px;
-  font-size: 1.3rem;
+  margin-top: 24px;
+  font-size: 1.18rem;
   line-height: 1.5;
 }
 
@@ -406,14 +405,14 @@ img {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 60px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 36px;
 }
 
 .card {
-  min-height: 270px;
-  padding: 28px;
+  min-height: 210px;
+  padding: 22px;
   background: var(--wash);
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -434,20 +433,21 @@ img {
 }
 
 .card h3 {
-  margin: 50px 0 12px;
-  font-size: 1.45rem;
+  margin: 30px 0 10px;
+  font-size: 1.2rem;
 }
 
 .card p {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .logo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 46px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 36px;
 }
 
 .group-card {
@@ -489,7 +489,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  object-fit: fill;
+  object-fit: contain;
   object-position: center;
   filter: blur(0.05px);
   opacity: 0.98;
@@ -512,7 +512,7 @@ img {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  padding: 28px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -530,7 +530,7 @@ img {
 
 .group-card h3 {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.2;
 }
 
@@ -565,10 +565,10 @@ img {
 }
 
 .group-card-details > p:not(.group-address) {
-  margin: 20px 0 0;
+  margin: 14px 0 0;
   color: var(--muted);
-  font-size: 0.94rem;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
 .group-contact {
@@ -716,7 +716,7 @@ img {
 
 .section-location {
   max-width: none;
-  padding-block: clamp(70px, 8vw, 104px);
+  padding-block: clamp(48px, 5vw, 64px);
   background: var(--text);
   color: #f8fbfc;
 }
@@ -983,7 +983,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  margin-top: 80px;
+  margin-top: 48px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -1096,7 +1096,7 @@ img {
       var(--hero-image, url("banner.jpeg")) 48% center / cover no-repeat;
   }
 
-  .hero-content { padding-bottom: 88px; }
+  .hero-content { padding-bottom: 56px; }
 }
 
 @media (max-width: 600px) {
@@ -1108,7 +1108,7 @@ img {
   .hero-description { color: #314f5f; }
 
   .section {
-    padding-block: 48px;
+    padding-block: 34px;
   }
 
   .hero-content {
@@ -1117,7 +1117,7 @@ img {
 
   .card-grid,
   .logo-grid {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .hero-meta {

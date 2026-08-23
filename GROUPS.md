@@ -14,7 +14,7 @@ Do not rename or remove the column headings:
 - `name`: English fallback name; edit the displayed translations in the matching `group.XX.name` row of `content.csv`
 - `logo`: local image path, such as `images/group-name.png` (optional). The file must exist at that exact path, including matching capitalization.
 - `address`: fallback address; edit the displayed translations in `content.csv`
-- `description`: fallback description; edit the displayed translations in `content.csv`
+- `english`, `german`, `farsi`: the group's description in each language; English is the fallback when a translation is empty
 - `contact_label`: fallback link text; edit the displayed translations in `content.csv`
 - `contact_url`: full `https://` URL or a `mailto:` address
 

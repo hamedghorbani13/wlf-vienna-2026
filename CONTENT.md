@@ -20,18 +20,17 @@ will remain disabled instead of sending visitors to a broken page.
 
 ## Group-card text
 
-Group text uses four rows per group:
+Group text uses three rows per group:
 
 - `group.01.name`
 - `group.01.address`
-- `group.01.description`
 - `group.01.contact`
 
-The number corresponds to the row order in `groups.csv`. For example, the second group uses the `group.02.*` rows. Logos and contact URLs remain in `groups.csv` because they are not translated.
+The number corresponds to the row order in `groups.csv`. For example, the second group uses the `group.02.*` rows. The three translated descriptions, logos, and contact URLs remain in `groups.csv`.
 
-## Program timeline
+## Program
 
-Program times, titles, descriptions, and their translations are stored in `program.csv`. See `PROGRAM.md` for its columns and editing workflow.
+The site currently shows only the confirmed event time, 14:00–19:00. `program.csv` is reserved for a future detailed timeline and is not loaded by the page yet.
 
 ## Local preview
 

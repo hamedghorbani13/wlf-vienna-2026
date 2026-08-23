@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+  <meta name="referrer" content="no-referrer" />
   <title>Woman, Life, Freedom — Vienna 2026</title>
   <meta name="description" content="Woman, Life, Freedom — Fourth Anniversary Community Fair & Civic Forum in Vienna, 15 September 2026." />
-  <link rel="stylesheet" href="style.css?v=20260822-csv-program" />
+  <link rel="stylesheet" href="style.css?v=20260823-compact-layout" />
 </head>
 
 <body id="top">
@@ -54,8 +56,8 @@
               </button>
 
               <div id="calendar-options" class="calendar-options" role="menu" hidden>
-                <a role="menuitem" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;dates=20260915%2F20260916&amp;details=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Near%20the%20Vienna%20International%20Centre%2C%20Vienna" target="_blank" rel="noopener noreferrer" data-i18n="calendar.google">Google Calendar</a>
-                <a role="menuitem" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;subject=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;startdt=2026-09-15&amp;enddt=2026-09-16&amp;allday=true&amp;body=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Near%20the%20Vienna%20International%20Centre%2C%20Vienna" target="_blank" rel="noopener noreferrer" data-i18n="calendar.outlook">Outlook / Microsoft 365</a>
+                <a role="menuitem" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;dates=20260915T140000%2F20260915T190000&amp;ctz=Europe%2FVienna&amp;details=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Kaiserm%C3%BChlen-VIC%20Station%20%3E%20VIC%20Exit%20%3E%20Muhammad%20Asad%20Square" target="_blank" rel="noopener noreferrer" data-i18n="calendar.google">Google Calendar</a>
+                <a role="menuitem" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;subject=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;startdt=2026-09-15T14%3A00%3A00%2B02%3A00&amp;enddt=2026-09-15T19%3A00%3A00%2B02%3A00&amp;body=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Kaiserm%C3%BChlen-VIC%20Station%20%3E%20VIC%20Exit%20%3E%20Muhammad%20Asad%20Square" target="_blank" rel="noopener noreferrer" data-i18n="calendar.outlook">Outlook / Microsoft 365</a>
                 <a role="menuitem" href="event.ics" download="wlf-vienna-2026.ics" data-i18n="calendar.other">Apple / Other calendar</a>
               </div>
             </div>
@@ -112,9 +114,7 @@
         <article class="card"><span>01</span><h3 data-i18n="features.1.title">Community Fair</h3><p data-i18n="features.1.body">Meet organizations, initiatives, and people working across different fields.</p></article>
         <article class="card"><span>02</span><h3 data-i18n="features.2.title">Human Rights</h3><p data-i18n="features.2.body">Explore documentation, advocacy, and ongoing initiatives related to Iran.</p></article>
         <article class="card"><span>03</span><h3 data-i18n="features.3.title">Art & Memory</h3><p data-i18n="features.3.body">Exhibitions and creative work centered on memory, resistance, and experience.</p></article>
-        <article class="card"><span>04</span><h3 data-i18n="features.4.title">Conversations</h3><p data-i18n="features.4.body">Short discussions, workshops, and direct exchanges rather than only long speeches.</p></article>
-        <article class="card"><span>05</span><h3 data-i18n="features.5.title">Professional Networks</h3><p data-i18n="features.5.body">Connect with doctors, lawyers, academics, journalists, and other professionals.</p></article>
-        <article class="card"><span>06</span><h3 data-i18n="features.6.title">Get Involved</h3><p data-i18n="features.6.body">Find concrete ways to volunteer, contribute skills, support projects, or collaborate.</p></article>
+        <article class="card"><span>04</span><h3 data-i18n="features.4.title">Get Involved</h3><p data-i18n="features.4.body">Find concrete ways to volunteer, contribute skills, support projects, or collaborate.</p></article>
       </div>
     </section>
 
@@ -129,10 +129,8 @@
 
     <section id="program" class="section">
       <p class="section-label" data-i18n="program.label">Program</p>
-      <h2 data-i18n="program.title">Program coming soon.</h2>
-      <div id="program-schedule" class="schedule" aria-live="polite"></div>
-      <p id="program-status" class="program-status" data-i18n="program.loading">Loading program…</p>
-      <noscript><p class="program-status" data-i18n="program.javascript_required">JavaScript is required to display the program.</p></noscript>
+      <h2><bdi dir="ltr">14:00 – 19:00</bdi></h2>
+      <p class="section-intro" data-i18n="program.title">Detailed program coming soon.</p>
     </section>
 
     <section id="participate" class="section">
@@ -156,7 +154,7 @@
           </div>
           <div>
             <svg class="info-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
-            <div><strong data-i18n="location.place.label">Location</strong><p data-i18n="location.place.value">Near the Vienna International Centre — exact location TBC</p></div>
+            <div><strong data-i18n="location.place.label">Location</strong><p data-i18n="location.place.value">Kaisermühlen-VIC Station &gt; VIC Exit &gt; Muhammad Asad Square</p></div>
           </div>
           <div>
             <svg class="info-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4V7Z" /><path d="M12 9v6" /></svg>
@@ -176,6 +174,6 @@
     <p data-i18n="footer.note">Event details subject to confirmation.</p>
   </footer>
 
-  <script src="script.js?v=20260822-csv-program"></script>
+  <script src="script.js?v=20260823-compact-layout-utf8"></script>
 </body>
 </html>

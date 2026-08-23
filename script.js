@@ -61,7 +61,6 @@ loadResponsiveHeroImage();
 let currentLanguage = getInitialLanguage();
 let translations = new Map();
 let groupRows = [];
-let programRows = [];
 
 function getInitialLanguage() {
   try {
@@ -129,7 +128,7 @@ function validExternalUrl(value) {
 
   try {
     const url = new URL(value);
-    return url.protocol === "https:" || url.protocol === "http:" ? url.href : "";
+    return url.protocol === "https:" ? url.href : "";
   } catch {
     return "";
   }
@@ -305,7 +304,7 @@ function createContactLink(group) {
     return null;
   }
 
-  if (!["http:", "https:", "mailto:"].includes(url.protocol)) return null;
+  if (!["https:", "mailto:"].includes(url.protocol)) return null;
 
   const link = document.createElement("a");
   link.className = "group-contact";
@@ -322,13 +321,13 @@ function createContactLink(group) {
 
 function normalizeAssetPath(value) {
   const path = (value || "").trim().replaceAll("\\", "/");
-  if (!path || path.endsWith("/") || /^[a-zA-Z]:\//.test(path) || path.startsWith("file:")) {
+  if (!path || path.endsWith("/") || path.startsWith("/") || !path.startsWith("images/")) {
     return "";
   }
 
   try {
     const url = new URL(path, document.baseURI);
-    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+    return url.origin === window.location.origin && url.protocol.match(/^https?:$/) ? url.href : "";
   } catch {
     return "";
   }
@@ -336,11 +335,12 @@ function normalizeAssetPath(value) {
 
 function translatedGroup(group, index) {
   const prefix = group.key || `group.${String(index + 1).padStart(2, "0")}`;
+  const description = group[LANGUAGE_COLUMNS[currentLanguage]] || group.english || group.description || "";
   return {
     ...group,
     name: translate(`${prefix}.name`, group.name || prefix),
     address: translate(`${prefix}.address`, group.address || ""),
-    description: translate(`${prefix}.description`, group.description || ""),
+    description: description || translate(`${prefix}.description`, ""),
     contact_label: translate(`${prefix}.contact`, group.contact_label || "Contact"),
   };
 }
@@ -450,48 +450,6 @@ function renderGroups() {
   observeReveal(cards);
 }
 
-function programValue(item, field) {
-  const language = LANGUAGE_COLUMNS[currentLanguage];
-  return item[`${field}_${language}`] || item[`${field}_english`] || "";
-}
-
-function createScheduleRow(item) {
-  const row = document.createElement("div");
-  row.className = "schedule-row";
-
-  const time = document.createElement("time");
-  time.textContent = item.time;
-  if (/^(?:[01]\d|2[0-3]):[0-5]\d$/.test(item.time)) {
-    time.dateTime = item.time;
-  }
-
-  const content = document.createElement("div");
-  const title = document.createElement("h3");
-  title.textContent = programValue(item, "title");
-  content.append(title);
-
-  const body = programValue(item, "body");
-  if (body) {
-    const description = document.createElement("p");
-    description.textContent = body;
-    content.append(description);
-  }
-
-  row.append(time, content);
-  return row;
-}
-
-function renderProgram() {
-  const schedule = document.querySelector("#program-schedule");
-  const status = document.querySelector("#program-status");
-  if (!schedule || !status || !programRows.length) return;
-
-  const items = programRows.map(createScheduleRow);
-  schedule.replaceChildren(...items);
-  status.hidden = true;
-  observeReveal(items);
-}
-
 async function loadContent() {
   const response = await fetch("content.csv", { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load content.csv (${response.status})`);
@@ -502,23 +460,12 @@ async function loadContent() {
 }
 
 async function loadGroups() {
-  const response = await fetch("groups.csv", { cache: "no-store" });
+  const response = await fetch("groups.csv?v=20260823-utf8-fix", { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load groups.csv (${response.status})`);
 
   groupRows = parseCsv(await response.text()).filter((group) => group.key || group.name);
   if (!groupRows.length) throw new Error("groups.csv does not contain any group rows");
   renderGroups();
-}
-
-async function loadProgram() {
-  const response = await fetch("program.csv", { cache: "no-store" });
-  if (!response.ok) throw new Error(`Could not load program.csv (${response.status})`);
-
-  programRows = parseCsv(await response.text()).filter(
-    (item) => item.time && (item.title_english || item.title_german || item.title_farsi)
-  );
-  if (!programRows.length) throw new Error("program.csv does not contain any program rows");
-  renderProgram();
 }
 
 async function loadSiteLinks() {
@@ -530,7 +477,6 @@ async function loadSiteLinks() {
 
 async function initializePage() {
   const groupsStatus = document.querySelector("#groups-status");
-  const programStatus = document.querySelector("#program-status");
 
   try {
     await loadContent();
@@ -543,23 +489,6 @@ async function initializePage() {
     await loadSiteLinks();
   } catch (error) {
     console.error(error);
-  }
-
-  try {
-    await loadProgram();
-  } catch (error) {
-    console.error(error);
-    if (programStatus) {
-      const location = window.location.protocol === "file:"
-        ? "program.local_error"
-        : "program.load_error";
-      const fallback = window.location.protocol === "file:"
-        ? "To load CSV files locally, preview this folder through a local web server."
-        : "The program could not be loaded. Please try again later.";
-      programStatus.hidden = false;
-      programStatus.dataset.i18n = location;
-      programStatus.textContent = translate(location, fallback);
-    }
   }
 
   try {

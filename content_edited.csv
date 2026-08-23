@@ -1,4 +1,4 @@
-﻿location,english,german,farsi
+location,english,german,farsi
 meta.title,"Woman, Life, Freedom — Vienna 2026","Frau, Leben, Freiheit — Wien 2026",زن، زندگی، آزادی — وین ۲۰۲۶
 meta.description,"Woman, Life, Freedom — Fourth Anniversary Community Fair & Civic Forum in Vienna, 15 September 2026.","Frau, Leben, Freiheit — Gemeinschaftsmesse und Bürgerforum zum vierten Jahrestag in Wien, 15. September 2026.",زن، زندگی، آزادی — نمایشگاه اجتماعی و انجمن مدنی چهارمین سالگرد در وین، ۱۵ سپتامبر ۲۰۲۶.
 accessibility.skip,Skip to main content,Zum Hauptinhalt springen,رفتن به محتوای اصلی
@@ -44,8 +44,12 @@ features.2.title,Human Rights,Menschenrechte,حقوق بشر
 features.2.body,"Meet groups and individuals working in human rights, documentation, and justice advocacy.","Lernen Sie Gruppen und Menschen kennen, die in den Bereichen Menschenrechte, Dokumentation und Einsatz für Gerechtigkeit tätig sind.",آشنایی با گروه‌ها و افرادی که در زمینه حقوق بشر، مستندسازی و دادخواهی فعالیت می‌کنند
 features.3.title,Art & Memory,Kunst & Erinnerung,هنر و یاد
 features.3.body,"An exhibition of artworks and stories drawn from lived experiences, memories, and resistance.","Präsentation von Kunstwerken und Erzählungen über gelebte Erfahrungen, Erinnerungen und Widerstand.",نمایش آثار هنری و روایت‌هایی از تجربه‌های زیسته، یادها و مقاومت
-features.4.title,Get Involved,Mitmachen,همراه شوید
-features.4.body,Different ways to join us — from volunteering and sharing your skills to offering support and collaborating with us.,"Verschiedene Möglichkeiten, uns zu begleiten – von ehrenamtlichem Engagement und dem Einbringen eigener Fähigkeiten bis hin zu Unterstützung und Zusammenarbeit.",راه‌های مختلف برای همراهی با ما؛ از داوطلبی و به‌ اشتراک‌گذاری مهارت‌ها تا حمایت و همکاری
+features.4.title,Conversations,Gespräche,گفت‌وگوها
+features.4.body,"Short discussions, workshops, and direct exchanges rather than only long speeches.","Kurze Diskussionen, Workshops und direkter Austausch statt nur langer Reden.",بحث‌های کوتاه، کارگاه‌ها و تبادل نظر مستقیم
+features.5.title,Professional Networks,Berufliche Netzwerke,شبکه‌های حرفه‌ای
+features.5.body,"Connect with doctors, lawyers, academics, journalists, and other professionals.","Vernetzen Sie sich mit Ärzt:innen, Jurist:innen, Wissenschaftler:innen, Journalist:innen und anderen Fachleuten.",با پزشکان، وکلا، دانشگاهیان، روزنامه‌نگاران و دیگر متخصصان ارتباط برقرار کنید.
+features.6.title,Get Involved,Mitmachen,همراه شوید
+features.6.body,Different ways to join us — from volunteering and sharing your skills to offering support and collaborating with us.,"Verschiedene Möglichkeiten, uns zu begleiten – von ehrenamtlichem Engagement und dem Einbringen eigener Fähigkeiten bis hin zu Unterstützung und Zusammenarbeit.",راه‌های مختلف برای همراهی با ما؛ از داوطلبی و به‌ اشتراک‌گذاری مهارت‌ها تا حمایت و همکاری
 groups.label,Participants,Teilnehmende,شرکت‌کنندگان
 groups.title,Participating groups,Teilnehmende Gruppen,گروه‌های شرکت‌کننده
 groups.intro,"Learn more about the backgrounds and activities of the participating groups to view their descriptions and contact information, hover over a card, select it, or tap it.","Lernen Sie mehr über den Hintergrund und die Aktivitäten der teilnehmenden Gruppen, um Beschreibungen und Kontaktmöglichkeiten zu sehen, bewegen Sie den Mauszeiger über eine Karte, wählen Sie sie aus oder tippen Sie darauf.",با پیشینه و فعالیت‌های گروه‌های شرکت‌کننده آشنا شوید برای دیدن توضیحات و راه‌های ارتباطی، نشانگر را روی کارت ببرید، آن را انتخاب کنید یا ضربه بزنید.
@@ -57,7 +61,15 @@ groups.more_soon,More information will be added soon.,Weitere Informationen folg
 groups.card_label,{name}. Show group details,{name}. Gruppendetails anzeigen,{name}. نمایش جزئیات گروه
 groups.view_details,View details,Details anzeigen,مشاهده جزئیات
 program.label,Program,Programm,برنامه
-program.title,Detailed program coming soon.,Das detaillierte Programm folgt in Kürze.,برنامه دقیق به‌زودی اعلام می‌شود.
+program.title,Program coming soon.,Programm folgt in Kürze.,برنامه به‌زودی اعلام می‌شود.
+program.1.title,Opening & Memorial,Eröffnung & Gedenken,افتتاحیه و یادبود
+program.1.body,Placeholder program item,Vorläufiger Programmpunkt,بخش موقت برنامه
+program.2.title,Community Fair Opens,Eröffnung der Gemeinschaftsmesse,آغاز نمایشگاه اجتماعی
+program.2.body,Meet participating organizations and initiatives.,Lernen Sie teilnehmende Organisationen und Initiativen kennen.,با سازمان‌ها و ابتکارهای شرکت‌کننده آشنا شوید.
+program.3.title,Workshops & Conversations,Workshops & Gespräche,کارگاه‌ها و گفت‌وگوها
+program.3.body,Short sessions throughout the afternoon.,Kurze Einheiten während des gesamten Nachmittags.,نشست‌های کوتاه در طول بعدازظهر.
+program.4.title,Closing,Abschluss,پایان
+program.4.body,Placeholder closing time.,Vorläufige Schlusszeit.,زمان موقت پایان.
 participate.label,Participate,Mitwirken,مشارکت
 participate.title,Bring more than your presence.,Bringen Sie mehr als Ihre Anwesenheit ein.,فراتر از حضورتان مشارکت کنید
 participate.intro,"For collaboration and participation, you can share your skills and experience, introduce your initiatives, or join us in organizing events.","Für Zusammenarbeit und Mitwirkung können Sie Ihre Fähigkeiten und Erfahrungen einbringen, Ihre Projekte vorstellen oder uns bei der Organisation von Veranstaltungen unterstützen.",برای همکاری و مشارکت، می‌توانید مهارت‌ها و تجربه‌های خود را ارائه دهید، طرح‌های خود را معرفی کنید یا در برگزاری رویدادها همراه ما باشید
@@ -66,9 +78,9 @@ participate.booth,Apply for a booth,Für einen Stand bewerben,درخواست غ�
 location.label,Practical information,Praktische Informationen,اطلاعات کاربردی
 location.title,Vienna · 15 September 2026,Wien · 15. September 2026,وین - ۱۵ سپتامبر ۲۰۲۶
 location.date.label,Date,Datum,تاریخ
-location.date.value,15 September 2026,15. September 2026,۱۵ سپتامبر ۲۰۲۶
+location.date.value,15-Sep-26,15. September 2026,۱۵ سپتامبر ۲۰۲۶
 location.place.label,Location,Ort,مکان
-location.place.value,Kaisermühlen-VIC Station > VIC Exit > Muhammad Asad Square,U-Bahn-Station Kaisermühlen-VIC > Ausgang VIC > Muhammad-Asad-Platz,U-Bahn-Station Kaisermühlen-VIC > Ausgang VIC > Muhammad-Asad-Platz
+location.place.value,Near the Vienna International Centre — exact location TBC,In der Nähe des Vienna International Centre — genauer Ort folgt,نزدیک مرکز بین‌المللی وین — مکان دقیق متعاقباً اعلام می‌شود
 location.admission.label,Admission,Eintritt,ورود
 location.admission.value,Free,Kostenlos,رایگان
 location.languages.label,Languages,Sprachen,زبان‌ها
@@ -77,13 +89,21 @@ footer.identity,"Woman, Life, Freedom · Vienna · 2026","Frau, Leben, Freiheit 
 footer.note,Event details subject to confirmation.,Veranstaltungsdetails vorbehaltlich Bestätigung.,جزئیات رویداد منوط به تأیید است.
 group.01.name,Haus des Buches Wien,Haus des Buches Wien,خانه کتاب وین
 group.01.address,Vienna,Wien,وین
+group.01.description,Add a short description of the group here.,Fügen Sie hier eine kurze Beschreibung der Gruppe hinzu.,توضیح کوتاهی درباره گروه در اینجا اضافه کنید.
 group.01.contact,Instagram,Instagram,اینستاگرام
 group.02.name,KDR,KDR,KDR
 group.02.address,Vienna,Wien,وین
+group.02.description,Add a short description of the group here.,Fügen Sie hier eine kurze Beschreibung der Gruppe hinzu.,توضیح کوتاهی درباره گروه در اینجا اضافه کنید.
 group.02.contact,Instagram,Instagram,اینستاگرام
 group.03.name,700 Sit-in Strike,700-Tage-Sitzstreik,تحصن ۷۰۰ روزه
 group.03.address,Vienna,Wien,وین
+group.03.description,Add a short description of the group here.,Fügen Sie hier eine kurze Beschreibung der Gruppe hinzu.,توضیح کوتاهی درباره گروه در اینجا اضافه کنید.
 group.03.contact,Instagram,Instagram,اینستاگرام
 group.04.name,WILP,WILP,WILP
 group.04.address,Vienna,Wien,وین
-group.04.contact,Website,Website,وب‌سایت
+group.04.description,Add a short description of the group here.,Fügen Sie hier eine kurze Beschreibung der Gruppe hinzu.,توضیح کوتاهی درباره گروه در اینجا اضافه کنید.
+group.04.contact,Instagram,Instagram,اینستاگرام
+group.05.name,Group 05,Gruppe 05,گروه ۰۵
+group.05.address,Vienna,Wien,وین
+group.05.description,Add a short description of the group here.,Fügen Sie hier eine kurze Beschreibung der Gruppe hinzu.,توضیح کوتاهی درباره گروه در اینجا اضافه کنید.
+group.05.contact,Website,Website,وب‌سایت
