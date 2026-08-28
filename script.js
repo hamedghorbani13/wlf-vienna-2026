@@ -127,6 +127,20 @@ function parseCsv(csvText) {
   );
 }
 
+function shuffleRows(rows) {
+  const shuffled = [...rows];
+
+  // Fisher-Yates gives every group an equal chance of appearing in each
+  // position. This runs once after groups.csv loads, so changing language
+  // keeps the current order while refreshing the page draws a new one.
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+
+  return shuffled;
+}
+
 function translate(location, fallback = "") {
   const entry = translations.get(location);
   if (!entry) return fallback;
@@ -331,7 +345,7 @@ function createContactLink(group) {
 
 function normalizeAssetPath(value) {
   const path = (value || "").trim().replaceAll("\\", "/");
-  if (!path || path.endsWith("/") || path.startsWith("/") || !path.startsWith("images/")) {
+  if (!path || path.endsWith("/") || path.startsWith("/") || !path.startsWith("Logos/")) {
     return "";
   }
 
@@ -454,7 +468,9 @@ function renderGroups() {
   const status = document.querySelector("#groups-status");
   if (!grid || !status || !groupRows.length) return;
 
-  const cards = groupRows.map(translatedGroup).map(createGroupCard);
+  const cards = groupRows
+    .map(({ group, csvIndex }) => translatedGroup(group, csvIndex))
+    .map(createGroupCard);
   grid.replaceChildren(...cards);
   status.hidden = true;
   observeReveal(cards);
@@ -473,10 +489,13 @@ async function loadGroups() {
   const response = await fetch(csvUrl("groups.csv"), { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load groups.csv (${response.status})`);
 
-  // One non-empty CSV data row always becomes one card. No HTML or JavaScript
-  // change is needed when groups are added, removed, or reordered.
-  groupRows = parseCsv(await response.text()).filter((group) =>
+  // One non-empty CSV data row always becomes one card. The rows are shuffled
+  // once per page load so the displayed order is not interpreted as a ranking.
+  const parsedGroups = parseCsv(await response.text()).filter((group) =>
     Object.values(group).some((value) => value.trim())
+  );
+  groupRows = shuffleRows(
+    parsedGroups.map((group, csvIndex) => ({ group, csvIndex }))
   );
   if (!groupRows.length) throw new Error("groups.csv does not contain any group rows");
   renderGroups();
