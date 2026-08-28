@@ -21,6 +21,7 @@ hero.subtitle,Gathering of Social and Civic Groups,Treffen sozialer und zivilges
 hero.description,"A look back at the evolution of the “Woman, Life, Freedom” movement, honoring the name and memory of Jina, and an opportunity to meet, connect, and engage in dialogue with the groups and individuals who have been part of this path","Ein Rückblick auf die Entwicklung der Bewegung „Frau, Leben, Freiheit“, im Gedenken an Jina und als Gelegenheit, die Gruppen und Menschen kennenzulernen, die Teil dieses Weges waren, sich zu begegnen und miteinander ins Gespräch zu kommen.",مروری بر مسیر جنبش «زن، زندگی، آزادی»، گرامی‌داشت نام و یاد ژینا و فرصتی برای آشنایی، دیدار و گفت‌وگو با گروه‌ها و افرادی که در این مسیر همراه بوده‌اند.
 hero.action.explore,Explore the event,Veranstaltung entdecken,آشنایی با رویداد
 hero.action.participate,Get involved,Mitmachen,مشارکت کنید
+hero.action.contact,Contact,Kontakt,ارتباط
 hero.action.calendar,Save to calendar,Zum Kalender hinzufügen,افزودن به تقویم
 calendar.google,Google Calendar,Google Kalender,تقویم گوگل
 calendar.outlook,Outlook / Microsoft 365,Outlook / Microsoft 365,اوت‌لوک / مایکروسافت ۳۶۵
@@ -63,6 +64,14 @@ participate.title,Bring more than your presence.,Bringen Sie mehr als Ihre Anwes
 participate.intro,"For collaboration and participation, you can share your skills and experience, introduce your initiatives, or join us in organizing events.","Für Zusammenarbeit und Mitwirkung können Sie Ihre Fähigkeiten und Erfahrungen einbringen, Ihre Projekte vorstellen oder uns bei der Organisation von Veranstaltungen unterstützen.",برای همکاری و مشارکت، می‌توانید مهارت‌ها و تجربه‌های خود را ارائه دهید، طرح‌های خود را معرفی کنید یا در برگزاری رویدادها همراه ما باشید
 participate.volunteer,Become a volunteer,Freiwillig mithelfen,داوطلب شوید
 participate.booth,Apply for a booth,Für einen Stand bewerben,درخواست غرفه
+contact.label,Contact,Kontakt,ارتباط
+contact.title,Stay connected.,In Verbindung bleiben.,در ارتباط بمانید.
+contact.intro,Email and Instagram details will be added soon.,E-Mail- und Instagram-Angaben folgen in Kürze.,اطلاعات ایمیل و اینستاگرام به‌زودی افزوده می‌شود.
+contact.aria_label,Contact details,Kontaktdaten,اطلاعات تماس
+contact.email.label,Email,E-Mail,ایمیل
+contact.email.value,[email address],[E-Mail-Adresse],[آدرس ایمیل]
+contact.instagram.label,Instagram,Instagram,اینستاگرام
+contact.instagram.value,[@instagram],[@instagram],[@instagram]
 location.label,Practical information,Praktische Informationen,اطلاعات کاربردی
 location.title,Vienna · 15 September 2026,Wien · 15. September 2026,وین - ۱۵ سپتامبر ۲۰۲۶
 location.date.label,Date,Datum,تاریخ

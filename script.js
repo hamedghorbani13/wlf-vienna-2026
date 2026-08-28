@@ -17,11 +17,11 @@ function csvUrl(filename) {
 const HERO_IMAGE_SOURCES = [
   {
     media: window.matchMedia("(max-width: 600px)"),
-    source: "images/banner-mobile.webp",
+    source: "images/banner-desktop.webp",
   },
   {
     media: window.matchMedia("(max-width: 900px)"),
-    source: "images/banner-tablet.webp",
+    source: "images/banner-desktop.webp",
   },
   {
     media: window.matchMedia("(min-width: 901px)"),
@@ -348,7 +348,7 @@ function translatedGroup(group, index) {
   const description = group[LANGUAGE_COLUMNS[currentLanguage]] || group.english || group.description || "";
   return {
     ...group,
-    name: translate(`${prefix}.name`, group.name || prefix),
+    name: translate(`${prefix}.name`, group.name || `Group ${index + 1}`),
     address: translate(`${prefix}.address`, group.address || ""),
     description: description || translate(`${prefix}.description`, ""),
     contact_label: translate(`${prefix}.contact`, group.contact_label || "Contact"),
@@ -473,7 +473,11 @@ async function loadGroups() {
   const response = await fetch(csvUrl("groups.csv"), { cache: "no-store" });
   if (!response.ok) throw new Error(`Could not load groups.csv (${response.status})`);
 
-  groupRows = parseCsv(await response.text()).filter((group) => group.key || group.name);
+  // One non-empty CSV data row always becomes one card. No HTML or JavaScript
+  // change is needed when groups are added, removed, or reordered.
+  groupRows = parseCsv(await response.text()).filter((group) =>
+    Object.values(group).some((value) => value.trim())
+  );
   if (!groupRows.length) throw new Error("groups.csv does not contain any group rows");
   renderGroups();
 }

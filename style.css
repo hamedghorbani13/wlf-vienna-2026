@@ -1198,3 +1198,147 @@ html.has-responsive-hero .hero::before {
     border-right: 0;
   }
 }
+
+/* 2026 poster palette: vermilion, soot, and warm paper. */
+:root {
+  --bg: #eadcc9;
+  --bg-soft: #dbc5ad;
+  --surface: #f5eadb;
+  --text: #130f0c;
+  --muted: #554840;
+  --accent: #ba2417;
+  --accent-soft: #8c1b12;
+  --line: rgba(19, 15, 12, 0.2);
+  --wash: rgba(255, 248, 236, 0.38);
+  --card-lavender: #dfc6ad;
+  --card-sand: #efd9bd;
+  --button-ink: #fff8ee;
+  --hero-top: #d8b99b;
+  --hero-bottom: #eadcc9;
+  --hero-art-opacity: 0.58;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(186, 36, 23, 0.08), transparent 28rem),
+    var(--bg);
+}
+
+.hero {
+  min-height: min(880px, 100svh);
+  background: #d8b99b;
+}
+
+.hero::before {
+  inset: var(--nav-height) 0 0;
+  background: var(--hero-image, url("images/banner-desktop.webp")) center / cover no-repeat;
+  opacity: var(--hero-art-opacity);
+}
+
+.hero::after {
+  inset: var(--nav-height) 0 0;
+  height: auto;
+  background:
+    linear-gradient(90deg, rgba(234, 220, 201, 0.8) 0%, rgba(234, 220, 201, 0.54) 48%, rgba(234, 220, 201, 0.2) 100%),
+    linear-gradient(0deg, var(--bg) 0%, transparent 28%);
+}
+
+.nav {
+  border-color: rgba(19, 15, 12, 0.28);
+}
+
+.brand,
+.nav-links a,
+.anniversary-mark,
+.hero h1,
+.hero-description,
+.eyebrow {
+  color: #090706;
+}
+
+.button-primary {
+  background: #15100d;
+  border-color: #15100d;
+}
+
+.button-secondary {
+  background: rgba(245, 234, 219, 0.72);
+  border-color: rgba(19, 15, 12, 0.22);
+  box-shadow: 0 10px 30px rgba(56, 17, 10, 0.12);
+}
+
+.features-section .card:nth-child(odd) {
+  background: #d8b99b;
+}
+
+.features-section .card:nth-child(even) {
+  background: #efd2b0;
+}
+
+.section-location {
+  background: #17110e;
+}
+
+.section-location .section-label,
+.section-location .info-grid strong,
+.info-icon {
+  color: #ef6c55;
+  stroke: #ef6c55;
+}
+
+.footer {
+  background: #090706;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.contact-item {
+  min-height: 140px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(245, 234, 219, 0.5);
+}
+
+.contact-item span {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--accent-soft);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-item strong {
+  font-size: clamp(1.25rem, 2.6vw, 2rem);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero::after {
+    background:
+      linear-gradient(90deg, rgba(234, 220, 201, 0.82), rgba(234, 220, 201, 0.46)),
+      linear-gradient(0deg, var(--bg) 0%, transparent 34%);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+    gap: 8px;
+  }
+}

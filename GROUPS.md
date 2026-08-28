@@ -1,6 +1,6 @@
 # Updating participating groups
 
-The participating-group cards use `groups.csv` for their logo and contact URL. Their visible text and translations are stored in `content.csv`; see `CONTENT.md`.
+The participating-group cards are generated directly from `groups.csv`. Every non-empty data row creates exactly one card, so there is no fixed card count and no HTML or JavaScript edit is needed. Optional translated names, addresses, and contact labels can be stored in `content.csv`; see `CONTENT.md`.
 
 ## Excel workflow
 
@@ -8,6 +8,8 @@ The participating-group cards use `groups.csv` for their logo and contact URL. T
 2. Keep the first row and add one group per row.
 3. In Excel, choose **Save As → CSV UTF-8 (Comma delimited)**.
 4. Replace the existing `groups.csv` in the website folder and publish the updated file.
+
+Blank rows are ignored. Rows can be added, deleted, or reordered freely; the card grid will match the resulting data-row count on the next page load.
 
 Do not rename or remove the column headings:
 
