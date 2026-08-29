@@ -9,8 +9,10 @@ DTSTAMP:20260818T000000Z
 DTSTART:20260915T120000Z
 DTEND:20260915T170000Z
 SUMMARY:Woman\, Life\, Freedom — Vienna 2026
-DESCRIPTION:Fourth Anniversary Community Fair & Civic Forum.
-LOCATION:Kaisermühlen-VIC Station > VIC Exit > Muhammad Asad Square
+DESCRIPTION:Fourth Anniversary Community Fair & Civic Forum. Arrival: Kaisermühlen VIC\, Muhammad Asad Square exit.
+LOCATION:48.233397\,16.417836
+GEO:48.233397;16.417836
+URL:https://maps.app.goo.gl/tWiELzLKrUzuRaLK6
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

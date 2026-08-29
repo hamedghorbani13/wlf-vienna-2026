@@ -1,0 +1,128 @@
+﻿location,english,german,farsi
+meta.description,"An interactive story for the fourth anniversary of Jina Amini’s death and the Woman, Life, Freedom movement.","Eine interaktive Geschichte zum vierten Jahrestag des Todes von Jina Amini und der Bewegung Frau, Leben, Freiheit.","روایتی تعاملی برای چهارمین سالگرد جان‌باختن ژینا امینی و جنبش زن، زندگی، آزادی."
+accessibility.skip,Skip to the story,Zur Geschichte springen,رفتن به روایت
+accessibility.navigation,Story navigation,Navigation der Geschichte,پیمایش روایت
+accessibility.language,Choose language,Sprache wählen,انتخاب زبان
+language.en,EN,EN,EN
+language.de,DE,DE,DE
+language.fa,FA,FA,FA
+nav.jina,Jina,Jina,ژینا
+nav.words,Three words,Drei Wörter,سه واژه
+nav.timeline,Timeline,Zeitleiste,گاه‌شمار
+nav.gathering,Vienna,Wien,وین
+nav.groups,Groups,Gruppen,گروه‌ها
+nav.about,About us,Über uns,درباره ما
+nav.program,Program,Programm,برنامه
+nav.location,Location,Ort,مکان
+common.four_years,FOUR YEARS ON,VIER JAHRE DANACH,چهار سال بعد
+common.event_line,Vienna · 15 September 2026 · 14:00–19:00,Wien · 15. September 2026 · 14:00–19:00,وین · ۱۵ سپتامبر ۲۰۲۶ · ۱۴:۰۰ تا ۱۹:۰۰
+common.begin,Begin the story,Geschichte beginnen,آغاز روایت
+hero.memory,Memory,Erinnerung,یاد
+hero.solidarity,Solidarity,Solidarität,پیوند
+hero.resistance,Resistance,Widerstand,مقاومت
+hero.purpose,"4th Anniversary of the “Woman, Life, Freedom” Movement and Commemoration of Jina (Mahsa) Amini","4. Jahrestag der Bewegung „Frau, Leben, Freiheit“ und Gedenken an Jina (Mahsa) Amini","چهارمین سالگرد جنبش «زن، زندگی، آزادی» و بزرگداشت ژینا (مهسا) امینی"
+hero.purpose_line_1,4th Anniversary of the,4. Jahrestag der Bewegung,چهارمین سالگرد جنبش
+hero.purpose_line_2,"“Woman, Life, Freedom” Movement","„Frau, Leben, Freiheit“","«زن، زندگی، آزادی»"
+hero.purpose_line_3,and Commemoration of,und Gedenken an,و بزرگداشت
+hero.purpose_line_4,Jina (Mahsa) Amini,Jina (Mahsa) Amini,ژینا (مهسا) امینی
+common.continue,Continue,Weiter,ادامه
+jina.kicker,01 · A life,01 · Ein Leben,۰۱ · یک زندگی
+jina.title,Her name was Jina.,Ihr Name war Jina.,نامش ژینا بود.
+jina.lead,"Jina (Mahsa) Amini was a 22-year-old Kurdish woman from Saqqez. In September 2022, she travelled to Tehran with her brother.",Jina (Mahsa) Amini war eine 22-jährige kurdische Frau aus Saqqez. Im September 2022 reiste sie mit ihrem Bruder nach Teheran.,ژینا (مهسا) امینی دختر ۲۲ ساله‌ی کُردی از سقز بود که در سپتامبر ۲۰۲۲ همراه برادرش به تهران (پایختت ایران) سفر کرد.
+jina.body,On 13 September she was detained by Iran’s “morality police” over the country’s compulsory veiling rules. She fell into a coma and died in custody in hospital on 16 September.,Am 13. September wurde sie von Irans sogenannter Sittenpolizei wegen der Zwangsverschleierungsvorschriften festgenommen. Sie fiel ins Koma und starb am 16. September im Krankenhaus in Gewahrsam.,"او در ۱۳ سپتامبر به‌دلیل قوانین حجاب اجباری توسط «گشت ارشاد» بازداشت شد، به کما رفت و در ۱۶ سپتامبر در بیمارستان و در بازداشت جان باخت."
+jina.name_title,Jina means life.,Jina bedeutet Leben.,ژینا یعنی زندگی.
+jina.name_body,"Her Kurdish name became inseparable from a movement that insists life must be lived with dignity, equality, and choice.","Ihr kurdischer Name wurde untrennbar mit einer Bewegung verbunden, die auf einem Leben in Würde, Gleichheit und Selbstbestimmung besteht.","نام کُردی او با جنبشی گره خورد که بر زندگی با کرامت، برابری و حق انتخاب پافشاری می‌کند."
+slogan.kicker,02 · A cry becomes a movement,02 · Ein Ruf wird zur Bewegung,۰۲ · یک فریاد به جنبش بدل می‌شود
+slogan.title,Jin. Jiyan. Azadî.,Jin. Jiyan. Azadî.,ژن. ژیان. ئازادی.
+slogan.origin,"At Jina’s funeral in Saqqez on 17 September, Kurdish women raised the chant “Jin, Jiyan, Azadî” — Woman, Life, Freedom. Rooted in the Kurdish women’s movement, it travelled across Iran in Persian and across the world in many languages.","Bei Jinas Beerdigung in Saqqez am 17. September riefen kurdische Frauen „Jin, Jiyan, Azadî“ – Frau, Leben, Freiheit. Der Ruf hat seine Wurzeln in der kurdischen Frauenbewegung und verbreitete sich auf Persisch im Iran und in vielen Sprachen weltweit.","در مراسم خاکسپاری ژینا در سقز در ۱۷ سپتامبر، شعار «ژن، ژیان، ئازادی» ــ زن، زندگی، آزادی ــ را سر داده شد. ترجمه فارسی این شعار، زن، زندگی، آزادی، به سرعت تبدیل به یکی از مهم ترین شعارهای سراسر ایران شد و دیری نگذشت که در سایر کشورها نیز طنین انداخت."
+words.kicker,"03 · Three words, one horizon","03 · Drei Wörter, ein Horizont","۰۳ · سه واژه، یک افق"
+words.title,Not a slogan to observe. A future to inhabit.,Kein Slogan zum Betrachten. Eine Zukunft zum Leben.,نه شعاری برای تماشا؛ آینده‌ای برای زیستن.
+words.woman.title,Woman,Frau,زن
+words.woman.body,"Bodily autonomy. Equal presence in public life. The right to speak, choose, create, and lead.","Körperliche Selbstbestimmung. Gleichberechtigte Präsenz im öffentlichen Leben. Das Recht zu sprechen, zu wählen, zu gestalten und zu führen.","اختیار بر بدن، حضور برابر در زندگی عمومی و حق سخن گفتن، انتخاب کردن، آفریدن و رهبری کردن."
+words.life.title,Life,Leben,زندگی
+words.life.body,"A life beyond fear: ordinary, joyful, safe, and fully one’s own.","Ein Leben jenseits der Angst: alltäglich, freudvoll, sicher und selbstbestimmt.","زندگی بدون سرکوب؛ شاد، امن و از آنِ خود."
+words.freedom.title,Freedom,Freiheit,آزادی
+words.freedom.body,"The freedom to think, assemble, love, dissent, and imagine a different society together.","Die Freiheit zu denken, sich zu versammeln, zu lieben, zu widersprechen und gemeinsam eine andere Gesellschaft zu entwerfen.","آزادی اندیشیدن، گردهم‌آمدن، دوست داشتن، مخالفت کردن و با هم جامعه‌ای دیگر را تصور کردن."
+importance.kicker,04 · Why it matters,04 · Warum es wichtig ist,۰۴ · چرا مهم است
+importance.title,Because freedom is measured in everyday life.,Weil Freiheit sich im Alltag zeigt.,زیرا آزادی در زندگی روزمره سنجیده می‌شود.
+importance.body,"The movement placed women and girls at the centre while connecting demands for gender equality, dignity, justice, and freedom across communities and generations.","Die Bewegung stellte Frauen und Mädchen ins Zentrum und verband Forderungen nach Geschlechtergerechtigkeit, Würde, Gerechtigkeit und Freiheit über Gemeinschaften und Generationen hinweg.","این جنبش زنان و دختران را در مرکز قرار داد و خواسته‌های برابری جنسیتی، کرامت، عدالت و آزادی را میان جامعه‌ها و نسل‌ها به هم پیوند زد."
+importance.voice.title,Voice,Stimme,صدا
+importance.voice.body,People claimed the right to tell their own stories.,"Menschen beanspruchten das Recht, ihre eigenen Geschichten zu erzählen.",مردم حق روایت کردن داستان خود را طلب کردند.
+importance.solidarity.title,Solidarity,Solidarität,همبستگی
+importance.solidarity.body,A Kurdish cry became a shared language without losing the importance of its roots.,"Ein kurdischer Ruf wurde zu einer gemeinsamen Sprache, ohne dass seine Wurzeln an Bedeutung verlieren.","فریادی کُردی به زبانی مشترک بدل شد، بی‌آنکه اهمیت ریشه‌هایش از میان برود."
+importance.future.title,Future,Zukunft,آینده
+importance.future.body,"The movement asks not only what must end, but what kind of life can begin.","Die Bewegung fragt nicht nur, was enden muss, sondern auch, welches Leben beginnen kann.",جنبش فقط نمی‌پرسد چه باید پایان یابد؛ می‌پرسد چه نوع زندگی می‌تواند آغاز شود.
+timeline.kicker_compact,03 · A movement in time,03 · Eine Bewegung in der Zeit,۰۳ · جنبشی در گذر زمان
+timeline.title,From one name to millions of voices.,Von einem Namen zu Millionen Stimmen.,از یک نام تا میلیون‌ها صدا.
+timeline.intro,This is not a complete history. It is a set of turning points that help us understand why remembrance remains active work.,"Dies ist keine vollständige Geschichte. Es sind Wendepunkte, die zeigen, warum Erinnern eine aktive Aufgabe bleibt.",این تاریخ کامل نیست؛ مجموعه‌ای از نقاط عطف است برای فهم اینکه چرا یادآوری همچنان کاری زنده است.
+timeline.roots.date,Before 2022,Vor 2022,پیش از ۲۰۲۲
+timeline.roots.title,The words already carried history.,Die Worte trugen bereits Geschichte.,این واژه‌ها پیشاپیش تاریخی با خود داشتند.
+timeline.roots.body,"“Jin, Jiyan, Azadî” emerged from decades of Kurdish women’s organizing and thought.","„Jin, Jiyan, Azadî“ entstand aus Jahrzehnten kurdischer Frauenorganisierung und politischen Denkens.","«ژن، ژیان، ئازادی» از دهه‌ها سازمان‌دهی و اندیشه زنان کُرد برخاست."
+timeline.detained.date,13-Sep-22,13. September 2022,۱۳ سپتامبر ۲۰۲۲
+timeline.detained.title,Jina is detained in Tehran.,Jina wird in Teheran festgenommen.,ژینا در تهران بازداشت می‌شود.
+timeline.detained.body,The “morality police” detained her over compulsory veiling rules.,Die sogenannte Sittenpolizei nahm sie wegen der Zwangsverschleierungsvorschriften fest.,گشت ارشاد او را به‌دلیل قوانین حجاب اجباری بازداشت می‌کند.
+timeline.death.date,16-Sep-22,16. September 2022,۱۶ سپتامبر ۲۰۲۲
+timeline.death.title,Jina dies in custody.,Jina stirbt in Gewahrsam.,ژینا در بازداشت جان می‌بازد.
+timeline.death.body,Her death becomes the spark for nationwide protest.,Ihr Tod wird zum Auslöser landesweiter Proteste.,جان‌باختن او جرقه اعتراض‌های سراسری می‌شود.
+timeline.funeral.date,17-Sep-22,17. September 2022,۱۷ سپتامبر ۲۰۲۲
+timeline.funeral.title,The chant rises in Saqqez.,Der Ruf erhebt sich in Saqqez.,شعار در سقز طنین می‌اندازد.
+timeline.funeral.body,"At her funeral, “Jin, Jiyan, Azadî” is chanted and shared far beyond the cemetery.","Bei ihrer Beerdigung wird „Jin, Jiyan, Azadî“ gerufen und weit über den Friedhof hinausgetragen.","در خاکسپاری او «ژن، ژیان، ئازادی» سر داده می‌شود و فراتر از گورستان می‌رود."
+timeline.streets.date,Autumn 2022,Herbst 2022,پاییز ۲۰۲۲
+timeline.streets.title,The uprising spreads.,Der Aufstand breitet sich aus.,خیزش گسترش می‌یابد.
+timeline.streets.body,Women and young people lead demonstrations across Iran; communities worldwide gather in solidarity.,Frauen und junge Menschen führen Demonstrationen im ganzen Iran an; weltweit kommen Menschen solidarisch zusammen.,زنان و جوانان اعتراض‌ها را در سراسر ایران پیش می‌برند و جامعه‌های جهان در همبستگی گرد هم می‌آیند.
+timeline.un.date,24-Nov-22,24. November 2022,۲۴ نوامبر ۲۰۲۲
+timeline.un.title,An international investigation begins.,Eine internationale Untersuchung beginnt.,یک تحقیق بین‌المللی آغاز می‌شود.
+timeline.un.body,The UN Human Rights Council establishes an independent fact-finding mission on violations connected to the protests.,Der UN-Menschenrechtsrat setzt eine unabhängige Untersuchungskommission zu den mit den Protesten verbundenen Menschenrechtsverletzungen ein.,شورای حقوق بشر سازمان ملل هیئت حقیقت‌یاب مستقلی درباره نقض‌های مرتبط با اعتراض‌ها تشکیل می‌دهد.
+timeline.repression.date,December 2022 onward,Ab Dezember 2022,از دسامبر ۲۰۲۲
+timeline.repression.title,Repression intensifies.,Die Repression verschärft sich.,سرکوب شدت می‌گیرد.
+timeline.repression.body,"Arrests, torture, unfair trials, and protest-related executions are used to instil fear; resistance continues in public and private life.","Festnahmen, Folter, unfaire Verfahren und protestbezogene Hinrichtungen sollen Angst verbreiten; der Widerstand setzt sich im öffentlichen und privaten Leben fort.","بازداشت، شکنجه، دادگاه‌های ناعادلانه و اعدام‌های مرتبط با اعتراض برای ایجاد ترس به کار می‌رود؛ مقاومت در زندگی عمومی و خصوصی ادامه می‌یابد."
+timeline.findings.date,24-Mar,März 2024,مارس ۲۰۲۴
+timeline.findings.title,The UN mission publishes its findings.,Die UN-Kommission veröffentlicht ihre Ergebnisse.,هیئت سازمان ملل یافته‌های خود را منتشر می‌کند.
+timeline.findings.body,It finds the State responsible for Jina’s unlawful death following physical violence and concludes that serious violations included crimes against humanity.,"Sie stellt fest, dass der Staat für Jinas unrechtmäßigen Tod infolge körperlicher Gewalt verantwortlich ist und dass schwere Verstöße Verbrechen gegen die Menschlichkeit umfassten.","هیئت، حکومت را مسئول مرگ غیرقانونی ژینا در پی خشونت فیزیکی می‌داند و نتیجه می‌گیرد که نقض‌های سنگین شامل جنایت علیه بشریت بوده است."
+timeline.vienna.date,15-Sep-26,15. September 2026,۱۵ سپتامبر ۲۰۲۶
+timeline.vienna.title,We gather in Vienna.,Wir kommen in Wien zusammen.,در وین گرد هم می‌آییم.
+timeline.vienna.body,"Four years on, remembrance becomes encounter: groups, artists, activists, and neighbours meet in one shared civic space.","Vier Jahre später wird Erinnerung zur Begegnung: Gruppen, Kunstschaffende, Aktivist:innen und Nachbar:innen treffen sich in einem gemeinsamen zivilgesellschaftlichen Raum.","چهار سال بعد، یادآوری به دیدار بدل می‌شود: گروه‌ها، هنرمندان، کنشگران و شهروندان در فضایی مدنی کنار هم می‌آیند."
+gather.kicker_compact,04 · From memory to meeting,04 · Von Erinnerung zu Begegnung,۰۴ · از یاد تا دیدار
+gather.title,What will happen in Vienna?,Was geschieht in Wien?,در وین چه خواهیم کرد؟
+gather.intro,"Not a ceremony watched from a distance. A space to remember, listen, meet the people behind the work, and make new connections.","Keine Zeremonie aus der Distanz. Ein Raum zum Erinnern, Zuhören, Kennenlernen der Menschen hinter der Arbeit und Knüpfen neuer Verbindungen.","نه مراسمی برای تماشا از دور؛ فضایی برای یادآوری، شنیدن، دیدار با افراد پشت این فعالیت‌ها و ساختن پیوندهای تازه."
+gather.remember.title,Memory,Erinnerung,یاد
+gather.remember.body,We call upon the past so we don't forget.,"Wir besinnen uns auf die Vergangenheit, damit wir nicht vergessen.",گذشته را فرا میخوانیم تا از یاد نبریم
+gather.listen.title,Solidarity,Solidarität,پیوند
+gather.listen.body,We come together and revive our bonds.,Wir kommen zusammen und stärken unsere Beziehungen.,در کنار هم قرار میگیریم وپیوندهایمان را زنده میکنیم
+gather.connect.title,Resistance,Widerstand,مقاومت
+gather.connect.body,Meet participating groups and discover possibilities for future collaboration.,Teilnehmende Gruppen treffen und Möglichkeiten künftiger Zusammenarbeit entdecken.,"در کنار هم، برای آرمان هایمان مقاومت میکنیم"
+event.date.label,Date,Datum,تاریخ
+event.date.value,15-Sep-26,15. September 2026,۱۵ سپتامبر ۲۰۲۶
+event.time.label,Time,Zeit,زمان
+event.time.value,14:00–19:00,14:00–19:00,۱۴:۰۰ تا ۱۹:۰۰
+event.place.label,Place,Ort,مکان
+event.place.value,Kaisermühlen VIC · Muhammad Asad Square exit,Kaisermühlen VIC · Ausgang Muhammad-Asad-Platz,کایزرمولن VIC · خروجی میدان محمد اسد
+event.admission.label,Admission,Eintritt,ورود
+event.admission.value,Free,Kostenlos,رایگان
+event.calendar,Add to calendar,Zum Kalender hinzufügen,افزودن به تقویم
+calendar.google,Google Calendar,Google Kalender,تقویم گوگل
+calendar.outlook,Outlook / Microsoft 365,Outlook / Microsoft 365,اوت‌لوک / مایکروسافت ۳۶۵
+calendar.apple,Apple / other calendar,Apple / anderer Kalender,اپل / تقویم دیگر
+common.scroll_down,Scroll down,Nach unten scrollen,به پایین بروید
+accessibility.scroll_down,Scroll to the next section,Zum nächsten Abschnitt scrollen,رفتن به بخش بعدی
+groups.kicker_compact,05 · Meet the participants,05 · Teilnehmende kennenlernen,۰۵ · آشنایی با شرکت‌کنندگان
+groups.title,The movement is made of people who keep showing up.,"Die Bewegung besteht aus Menschen, die immer wieder da sind.",جنبش از آدم‌هایی ساخته می‌شود که پیوسته حاضر می‌شوند.
+groups.intro,Select a card to read more.,"Wählen Sie eine Karte, um mehr zu erfahren.",برای خواندن بیشتر کارت را انتخاب کنید.
+groups.view,View story,Mehr erfahren,مشاهده روایت
+groups.close,Close,Schließen,بستن
+groups.loading,Loading participating groups…,Teilnehmende Gruppen werden geladen…,در حال بارگذاری گروه‌های شرکت‌کننده…
+groups.error,Participating groups could not be loaded.,Teilnehmende Gruppen konnten nicht geladen werden.,گروه‌های شرکت‌کننده بارگذاری نشدند.
+contact.kicker,Stay connected,In Verbindung bleiben,در ارتباط بمانید
+contact.title,The story continues after the gathering.,Die Geschichte geht nach dem Treffen weiter.,روایت پس از گردهمایی ادامه دارد.
+contact.email.label,Email,E-Mail,ایمیل
+contact.email.value,contact@womanlifefreedomvienna.com,contact@womanlifefreedomvienna.com,contact@womanlifefreedomvienna.com
+contact.instagram.label,Instagram,Instagram,اینستاگرام
+contact.instagram.value,[@instagram],[@instagram],[@instagram]
+sources.kicker,Sources & context,Quellen & Kontext,منابع و زمینه
+sources.title,Read beyond this page.,Über diese Seite hinaus weiterlesen.,فراتر از این صفحه بخوانید.
+sources.intro,"This story is a concise interpretation, not a complete historical record. The factual timeline is grounded in the sources below.","Diese Geschichte ist eine knappe Einordnung, kein vollständiger historischer Bericht. Die faktische Zeitleiste stützt sich auf die folgenden Quellen.","این روایت برداشتی فشرده است، نه گزارشی کامل از تاریخ. گاه‌شمار بر منابع زیر استوار است."
+footer.identity,"Woman, Life, Freedom · Vienna · 2026","Frau, Leben, Freiheit · Wien · 2026","زن، زندگی، آزادی · وین · ۲۰۲۶"
+footer.note,Memory. Solidarity. Resistance.,Erinnerung. Solidarität. Widerstand.,یاد. پیوند. مقاومت.
+hero.event_city,Vienna,Wien,وین
+hero.event_date,15. September 2026,15. September 2026,۱۵ سپتامبر ۲۰۲۶
+hero.event_time,14:00-19:00,14:00-19:00,۱۴:۰۰-۱۹:۰۰

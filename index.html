@@ -1,185 +1,192 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="mist-blue">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+  <meta name="description" content="An interactive story for the fourth anniversary of Jina Amini’s death and the Woman, Life, Freedom movement." />
   <meta name="referrer" content="no-referrer" />
-  <title>Woman, Life, Freedom — Vienna 2026</title>
-  <meta name="description" content="Woman, Life, Freedom — Fourth Anniversary Community Fair & Civic Forum in Vienna, 15 September 2026." />
-  <link rel="stylesheet" href="style.css?v=20260828-poster-palette" />
+  <title>4th Anniversary of the “Woman, Life, Freedom” Movement</title>
+  <link rel="stylesheet" href="base.css?v=20260829-card-gaps" />
+  <link rel="stylesheet" href="style.css?v=20260829-card-gaps" />
 </head>
+<body class="portrait-story" data-active-scene="opening">
+  <a class="skip-link" href="#story" data-i18n="accessibility.skip">Skip to the story</a>
+  <div class="page-backdrop" aria-hidden="true"></div>
 
-<body id="top">
-  <a class="skip-link" href="#main-content" data-i18n="accessibility.skip">Skip to main content</a>
-
-  <header class="hero">
-    <nav class="nav" aria-label="Primary navigation" data-i18n-aria-label="accessibility.navigation">
-      <a href="#top" class="brand" data-i18n="navigation.brand">WLF Vienna</a>
-
-      <div class="nav-controls">
-        <div class="nav-links">
-          <a href="#about" data-i18n="navigation.about">About</a>
-          <a href="#groups" data-i18n="navigation.groups">Groups</a>
-          <a href="#program" data-i18n="navigation.program">Program</a>
-          <a href="#location" data-i18n="navigation.location">Location</a>
-        </div>
-
-        <div class="language-switcher" role="group" aria-label="Choose language" data-i18n-aria-label="accessibility.language">
+  <header id="top" class="portrait-hero" data-scene="opening">
+    <nav class="site-nav" aria-label="Story navigation" data-i18n-aria-label="accessibility.navigation">
+      <a class="brand" href="#top"></a>
+      <div class="nav-links">
+          <a href="#jina" data-i18n="nav.about" data-english="About us" data-german="Über uns" data-farsi="درباره ما">About us</a>
+          <a href="#groups" data-i18n="nav.groups">Groups</a>
+          <a href="#gathering" data-i18n="nav.program" data-english="Program" data-german="Programm" data-farsi="برنامه">Program</a>
+          <a href="#event-location" data-i18n="nav.location" data-english="Location" data-german="Ort" data-farsi="مکان">Location</a>
+      </div>
+      <div class="language-switcher" role="group" aria-label="Choose language" data-i18n-aria-label="accessibility.language">
           <button type="button" data-language="en" aria-pressed="true" data-i18n="language.en">EN</button>
           <button type="button" data-language="de" aria-pressed="false" data-i18n="language.de">DE</button>
           <button type="button" data-language="fa" aria-pressed="false" data-i18n="language.fa">FA</button>
-        </div>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <p class="anniversary-mark" data-i18n="hero.anniversary">FOUR YEARS ON</p>
-
-      <h1>
-        <span data-i18n="hero.title.1">Woman,</span><br />
-        <span data-i18n="hero.title.2">Life,</span><br />
-        <span data-i18n="hero.title.3">Freedom.</span>
-      </h1>
-
-      <div class="hero-bottom">
-        <div>
-          <p class="hero-subtitle" data-i18n="hero.subtitle">Community Fair & Civic Forum</p>
-          <p class="hero-description" data-i18n="hero.description">Remembering the movement. Meeting the people behind the work. Building connections for what comes next.</p>
-
-          <div class="hero-meta">
-            <p class="eyebrow" data-i18n="hero.eyebrow">Vienna · 15 September 2026</p>
-            <div class="calendar-menu">
-              <button class="calendar-trigger" type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="calendar-options">
-                <span data-i18n="hero.action.calendar">Save to calendar</span>
-                <svg aria-hidden="true" viewBox="0 0 12 8" width="12" height="8"><path d="M1 1.25 6 6.25l5-5" /></svg>
-              </button>
-
-              <div id="calendar-options" class="calendar-options" role="menu" hidden>
-                <a role="menuitem" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;dates=20260915T140000%2F20260915T190000&amp;ctz=Europe%2FVienna&amp;details=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Kaiserm%C3%BChlen-VIC%20Station%20%3E%20VIC%20Exit%20%3E%20Muhammad%20Asad%20Square" target="_blank" rel="noopener noreferrer" data-i18n="calendar.google">Google Calendar</a>
-                <a role="menuitem" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&amp;rru=addevent&amp;subject=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;startdt=2026-09-15T14%3A00%3A00%2B02%3A00&amp;enddt=2026-09-15T19%3A00%3A00%2B02%3A00&amp;body=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.&amp;location=Kaiserm%C3%BChlen-VIC%20Station%20%3E%20VIC%20Exit%20%3E%20Muhammad%20Asad%20Square" target="_blank" rel="noopener noreferrer" data-i18n="calendar.outlook">Outlook / Microsoft 365</a>
-                <a role="menuitem" href="event.ics" download="wlf-vienna-2026.ics" data-i18n="calendar.other">Apple / Other calendar</a>
-              </div>
+    <div class="portrait-stage">
+      <div class="portrait-image" aria-hidden="true"></div>
+      <div class="portrait-hero-copy">
+        <div class="portrait-hero-content">
+          <h1 class="hero-values">
+            <span data-i18n="hero.memory">Memory</span>
+            <span data-i18n="hero.solidarity">Solidarity</span>
+            <span data-i18n="hero.resistance">Resistance</span>
+          </h1>
+          <p class="hero-purpose">
+            <span data-i18n="hero.purpose_line_1">4th Anniversary of the</span>
+            <span data-i18n="hero.purpose_line_2">“Woman, Life, Freedom” Movement</span>
+            <span data-i18n="hero.purpose_line_3">and Commemoration of</span>
+            <span data-i18n="hero.purpose_line_4">Jina (Mahsa) Amini</span>
+          </p>
+          <p class="hero-event">
+            <span data-i18n="hero.event_date">15. September 2026</span>
+            <span data-i18n="hero.event_time">14:00-19:00</span>
+          </p>
+          <details class="calendar-menu hero-calendar">
+            <summary class="button"><span data-i18n="event.calendar">Add to calendar</span><span class="calendar-chevron" aria-hidden="true"></span></summary>
+            <div class="calendar-options">
+              <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;dates=20260915T120000Z%2F20260915T170000Z&amp;details=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.%0A%0AKaiserm%C3%BChlen%20VIC%2C%20Muhammad%20Asad%20Square%20exit.&amp;location=48.233397%2C16.417836" target="_blank" rel="noopener noreferrer" data-i18n="calendar.google">Google Calendar</a>
+              <a href="https://outlook.office.com/calendar/0/deeplink/compose?subject=Woman%2C%20Life%2C%20Freedom%20%E2%80%94%20Vienna%202026&amp;startdt=2026-09-15T14%3A00%3A00%2B02%3A00&amp;enddt=2026-09-15T19%3A00%3A00%2B02%3A00&amp;body=Fourth%20Anniversary%20Community%20Fair%20%26%20Civic%20Forum.%0A%0AKaiserm%C3%BChlen%20VIC%2C%20Muhammad%20Asad%20Square%20exit.&amp;location=48.233397%2C16.417836" target="_blank" rel="noopener noreferrer" data-i18n="calendar.outlook">Outlook / Microsoft 365</a>
+              <a href="event.ics" download="wlf-vienna-2026.ics" data-i18n="calendar.apple">Apple / other calendar</a>
             </div>
-          </div>
-
-          <div class="hero-actions">
-            <a href="#contact" class="button button-primary" data-i18n="hero.action.contact">Contact</a>
-            <a href="#about" class="button button-secondary" data-i18n="hero.action.explore">Explore the event</a>
-          </div>
+          </details>
         </div>
       </div>
+      <a class="scroll-cue" href="#jina" data-i18n-aria-label="accessibility.scroll_down" aria-label="Scroll down">
+        <span data-i18n="common.scroll_down">Scroll down</span>
+        <span class="scroll-arrow" aria-hidden="true">↓</span>
+      </a>
     </div>
   </header>
 
-  <main id="main-content">
-    <section id="about" class="section about-section">
-      <div class="about-grid">
-        <div>
-          <p class="section-label" data-i18n="about.label">About the event</p>
-          <h2 data-i18n="about.title">From visibility to connection.</h2>
+  <main id="story">
+    <section id="jina" class="story-section life-chapter" data-scene="jina">
+      <div class="story-inner life-grid">
+        <div class="life-copy">
+          <p class="kicker reveal" data-i18n="jina.kicker">01 · A life</p>
+          <h2 class="reveal" data-i18n="jina.title">Her name was Jina.</h2>
+          <p class="lead reveal" data-i18n="jina.lead">Jina (Mahsa) Amini was a 22-year-old Kurdish woman from Saqqez. In September 2022, she travelled to Tehran with her brother.</p>
+          <p class="body-copy reveal" data-i18n="jina.body">On 13 September she was detained by Iran’s “morality police” over the country’s compulsory veiling rules. She fell into a coma and died in custody in hospital on 16 September.</p>
         </div>
-
-        <div class="about-copy">
-          <p class="section-intro" data-i18n="about.intro">Four years after the beginning of Woman, Life, Freedom, we come together not only to remember, but also to connect.</p>
-          <p data-i18n="about.body.1">This event brings civil-society organizations, activists, professionals, artists, political groups, and members of the wider community into one shared space.</p>
-          <p data-i18n="about.body.2">Instead of focusing only on speeches and symbolic presence, the day is designed around direct exchange: meeting organizations, discovering resources, sharing knowledge, contributing skills, and creating possibilities for future cooperation.</p>
-        </div>
-      </div>
-
-      <div class="principles-strip">
-        <div>
-          <span>01</span>
-          <strong data-i18n="about.principle.1.title">Remember</strong>
-          <p data-i18n="about.principle.1.body">Honor those affected by repression and preserve the movement’s memory.</p>
-        </div>
-        <div>
-          <span>02</span>
-          <strong data-i18n="about.principle.2.title">Connect</strong>
-          <p data-i18n="about.principle.2.body">Bring organizations, professionals, artists, and communities together.</p>
-        </div>
-        <div>
-          <span>03</span>
-          <strong data-i18n="about.principle.3.title">Participate</strong>
-          <p data-i18n="about.principle.3.body">Create practical ways for visitors to contribute beyond the event itself.</p>
-        </div>
+        <aside class="name-note reveal">
+          <span>JINA</span>
+          <h3 data-i18n="jina.name_title">Jina means life.</h3>
+          <p data-i18n="jina.name_body">Her Kurdish name became inseparable from a movement that insists life must be lived with dignity, equality, and choice.</p>
+        </aside>
       </div>
     </section>
 
-    <section class="section features-section">
-      <p class="section-label" data-i18n="features.label">What you'll find</p>
-      <h2 data-i18n="features.title">A civic space built around participation.</h2>
+    <section id="words" class="story-section origin-chapter" data-scene="words">
+      <div class="story-inner">
+        <p class="kicker reveal" data-i18n="slogan.kicker">02 · A cry becomes a movement</p>
+        <h2 class="chant reveal" data-i18n="slogan.title">Jin. Jiyan. Azadî.</h2>
+        <p class="lead reveal" data-i18n="slogan.origin">At Jina’s funeral in Saqqez on 17 September, Kurdish women raised the chant “Jin, Jiyan, Azadî” — Woman, Life, Freedom. Rooted in the Kurdish women’s movement, it travelled across Iran in Persian and across the world in many languages.</p>
 
-      <div class="card-grid">
-        <article class="card"><span>01</span><h3 data-i18n="features.1.title">Community Fair</h3><p data-i18n="features.1.body">Meet organizations, initiatives, and people working across different fields.</p></article>
-        <article class="card"><span>02</span><h3 data-i18n="features.2.title">Human Rights</h3><p data-i18n="features.2.body">Explore documentation, advocacy, and ongoing initiatives related to Iran.</p></article>
-        <article class="card"><span>03</span><h3 data-i18n="features.3.title">Art & Memory</h3><p data-i18n="features.3.body">Exhibitions and creative work centered on memory, resistance, and experience.</p></article>
-        <article class="card"><span>04</span><h3 data-i18n="features.4.title">Get Involved</h3><p data-i18n="features.4.body">Find concrete ways to volunteer, contribute skills, support projects, or collaborate.</p></article>
+        <div class="word-bands">
+          <article class="word-band reveal">
+            <span>01</span>
+            <h3 data-i18n="words.woman.title">Woman</h3>
+            <p data-i18n="words.woman.body">Bodily autonomy. Equal presence in public life. The right to speak, choose, create, and lead.</p>
+          </article>
+          <article class="word-band reveal">
+            <span>02</span>
+            <h3 data-i18n="words.life.title">Life</h3>
+            <p data-i18n="words.life.body">A life beyond fear: ordinary, joyful, safe, and fully one’s own.</p>
+          </article>
+          <article class="word-band reveal">
+            <span>03</span>
+            <h3 data-i18n="words.freedom.title">Freedom</h3>
+            <p data-i18n="words.freedom.body">The freedom to think, assemble, love, dissent, and imagine a different society together.</p>
+          </article>
+        </div>
+        <p class="movement-explainer reveal" data-i18n="importance.body">The movement placed women and girls at the centre while connecting demands for gender equality, dignity, justice, and freedom across communities and generations.</p>
       </div>
     </section>
 
-    <section id="groups" class="section">
-      <p class="section-label" data-i18n="groups.label">Participants</p>
-      <h2 data-i18n="groups.title">Participating groups</h2>
-      <p class="section-intro" data-i18n="groups.intro">Meet the organizations and initiatives taking part. Hover, focus, or tap a card to see its description and contact information.</p>
-      <div id="groups-grid" class="logo-grid" aria-live="polite"></div>
-      <p id="groups-status" class="groups-status" data-i18n="groups.loading">Loading participating groups…</p>
-      <noscript><p class="groups-status" data-i18n="groups.javascript_required">JavaScript is required to display the participating groups.</p></noscript>
-    </section>
-
-    <section id="program" class="section">
-      <p class="section-label" data-i18n="program.label">Program</p>
-      <h2><bdi dir="ltr">14:00 – 19:00</bdi></h2>
-      <p class="section-intro" data-i18n="program.title">Detailed program coming soon.</p>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <p class="section-label" data-i18n="contact.label">Contact</p>
-      <h2 data-i18n="contact.title">Stay connected.</h2>
-      <p class="section-intro" data-i18n="contact.intro">Email and Instagram details will be added soon.</p>
-      <div class="contact-grid" aria-label="Contact details" data-i18n-aria-label="contact.aria_label">
-        <div class="contact-item">
-          <span data-i18n="contact.email.label">Email</span>
-          <strong data-i18n="contact.email.value">[email address]</strong>
-        </div>
-        <div class="contact-item">
-          <span data-i18n="contact.instagram.label">Instagram</span>
-          <strong data-i18n="contact.instagram.value">[@instagram]</strong>
+    <section id="timeline" class="story-section timeline-chapter" data-scene="timeline">
+      <div class="story-inner">
+        <p class="kicker reveal" data-i18n="timeline.kicker_compact" data-english="03 · A movement in time" data-german="03 · Eine Bewegung in der Zeit" data-farsi="۰۳ · جنبشی در گذر زمان">03 · A movement in time</p>
+        <h2 class="reveal" data-i18n="timeline.title">From one name to millions of voices.</h2>
+        <p class="body-copy reveal" data-i18n="timeline.intro">This is not a complete history. It is a set of turning points that help us understand why remembrance remains active work.</p>
+        <div class="portrait-timeline">
+          <article class="reveal"><time data-i18n="timeline.roots.date">Before 2022</time><div><h3 data-i18n="timeline.roots.title">The words already carried history.</h3><p data-i18n="timeline.roots.body">“Jin, Jiyan, Azadî” emerged from decades of Kurdish women’s organizing and thought.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.detained.date">13 September 2022</time><div><h3 data-i18n="timeline.detained.title">Jina is detained in Tehran.</h3><p data-i18n="timeline.detained.body">The “morality police” detained her over compulsory veiling rules.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.death.date">16 September 2022</time><div><h3 data-i18n="timeline.death.title">Jina dies in custody.</h3><p data-i18n="timeline.death.body">Her death becomes the spark for nationwide protest.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.funeral.date">17 September 2022</time><div><h3 data-i18n="timeline.funeral.title">The chant rises in Saqqez.</h3><p data-i18n="timeline.funeral.body">At her funeral, “Jin, Jiyan, Azadî” is chanted and shared far beyond the cemetery.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.streets.date">Autumn 2022</time><div><h3 data-i18n="timeline.streets.title">The uprising spreads.</h3><p data-i18n="timeline.streets.body">Women and young people lead demonstrations across Iran; communities worldwide gather in solidarity.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.un.date">24 November 2022</time><div><h3 data-i18n="timeline.un.title">An international investigation begins.</h3><p data-i18n="timeline.un.body">The UN Human Rights Council establishes an independent fact-finding mission on violations connected to the protests.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.findings.date">March 2024</time><div><h3 data-i18n="timeline.findings.title">The UN mission publishes its findings.</h3><p data-i18n="timeline.findings.body">It finds the State responsible for Jina’s unlawful death following physical violence and concludes that serious violations included crimes against humanity.</p></div></article>
+          <article class="reveal"><time data-i18n="timeline.vienna.date">15 September 2026</time><div><h3 data-i18n="timeline.vienna.title">We gather in Vienna.</h3><p data-i18n="timeline.vienna.body">Four years on, remembrance becomes encounter: groups, artists, activists, and neighbours meet in one shared civic space.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section id="location" class="section section-location">
-      <div class="section-location-inner">
-        <p class="section-label" data-i18n="location.label">Practical information</p>
-        <h2 data-i18n="location.title">Vienna · 15 September 2026</h2>
-        <div class="info-grid">
-          <div>
-            <svg class="info-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z" /></svg>
-            <div><strong data-i18n="location.date.label">Date</strong><p data-i18n="location.date.value">15 September 2026</p></div>
-          </div>
-          <div>
-            <svg class="info-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></svg>
-            <div><strong data-i18n="location.place.label">Location</strong><p data-i18n="location.place.value">Kaisermühlen-VIC Station &gt; VIC Exit &gt; Muhammad Asad Square</p></div>
-          </div>
-          <div>
-            <svg class="info-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16v4a2 2 0 0 0 0 4v4H4v-4a2 2 0 0 0 0-4V7Z" /><path d="M12 9v6" /></svg>
-            <div><strong data-i18n="location.admission.label">Admission</strong><p data-i18n="location.admission.value">Free</p></div>
-          </div>
-          <div>
-            <svg class="info-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3.5 9h17M3.5 15h17M12 3c2.2 2.5 3.3 5.5 3.3 9S14.2 18.5 12 21c-2.2-2.5-3.3-5.5-3.3-9S9.8 5.5 12 3Z" /></svg>
-            <div><strong data-i18n="location.languages.label">Languages</strong><p data-i18n="location.languages.value">English · فارسی · Deutsch</p></div>
-          </div>
+    <section id="gathering" class="story-section why-chapter gathering-chapter" data-scene="gathering">
+      <div class="story-inner">
+        <p class="kicker reveal" data-i18n="gather.kicker_compact" data-english="04 · From memory to meeting" data-german="04 · Von Erinnerung zu Begegnung" data-farsi="۰۴ · از یاد تا دیدار">04 · From memory to meeting</p>
+        <h2 class="reveal" data-i18n="gather.title">What will happen in Vienna?</h2>
+        <p class="lead reveal" data-i18n="gather.intro">Not a ceremony watched from a distance. A space to remember, listen, meet the people behind the work, and make new connections.</p>
+        <div class="gather-steps">
+          <article class="reveal"><span>01</span><h3 data-i18n="gather.remember.title">Remember</h3><p data-i18n="gather.remember.body">Hold Jina’s name and the memory of lives affected and lost.</p></article>
+          <article class="reveal"><span>02</span><h3 data-i18n="gather.listen.title">Listen</h3><p data-i18n="gather.listen.body">Encounter art, testimony, knowledge, and different experiences of the movement.</p></article>
+          <article class="reveal"><span>03</span><h3 data-i18n="gather.connect.title">Connect</h3><p data-i18n="gather.connect.body">Meet participating groups and discover possibilities for future collaboration.</p></article>
         </div>
+        <div id="event-location" class="event-facts reveal">
+          <div class="event-fact"><span data-i18n="event.date.label">Date</span><strong data-i18n="event.date.value">15 September 2026</strong></div>
+          <div class="event-fact"><span data-i18n="event.time.label">Time</span><strong data-i18n="event.time.value">14:00–19:00</strong></div>
+          <div class="event-fact"><span data-i18n="event.place.label">Place</span><strong data-i18n="event.place.value">Kaisermühlen VIC · Muhammad Asad Square exit</strong></div>
+          <div class="event-fact"><span data-i18n="event.admission.label">Admission</span><strong data-i18n="event.admission.value">Free</strong></div>
+        </div>
+        <a class="button event-button" href="event.ics" download="wlf-vienna-2026.ics" data-i18n="event.calendar">Save to calendar</a>
+      </div>
+    </section>
+
+    <section id="groups" class="story-section groups-chapter" data-scene="groups">
+      <div class="story-inner">
+        <p class="kicker reveal" data-i18n="groups.kicker_compact" data-english="05 · Meet the participants" data-german="05 · Teilnehmende kennenlernen" data-farsi="۰۵ · آشنایی با شرکت‌کنندگان">05 · Meet the participants</p>
+        <h2 class="reveal" data-i18n="groups.title">The movement is made of people who keep showing up.</h2>
+        <p class="body-copy reveal" data-i18n="groups.intro">Every non-empty row in groups.csv becomes a card here. Select a card to read more.</p>
+        <div id="groups-grid" class="groups-grid" aria-live="polite"></div>
+        <p id="groups-status" class="groups-status" data-i18n="groups.loading">Loading participating groups…</p>
+      </div>
+    </section>
+
+    <section id="contact" class="story-section contact-chapter" data-scene="contact">
+      <div class="story-inner">
+        <p class="kicker reveal" data-i18n="contact.kicker">Stay connected</p>
+        <h2 class="reveal" data-i18n="contact.title">The story continues after the gathering.</h2>
+        <div class="contact-grid reveal">
+          <div class="contact-card"><span data-i18n="contact.email.label">Email</span><strong data-i18n="contact.email.value">[email address]</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section sources-chapter">
+      <div class="story-inner">
+        <p class="kicker" data-i18n="sources.kicker">Sources & context</p>
+        <h2 data-i18n="sources.title">Read beyond this page.</h2>
+        <p class="body-copy" data-i18n="sources.intro">This story is a concise interpretation, not a complete historical record. The factual timeline is grounded in the sources below.</p>
+        <ul class="sources-list">
+          <li><a href="https://www.amnesty.org/en/latest/news/2023/09/what-happened-to-mahsa-zhina-amini/" target="_blank" rel="noopener noreferrer">Amnesty International · What happened to Mahsa/Zhina Amini?</a></li>
+          <li><a href="https://www.unwomen.org/en/news-stories/statement/2022/09/un-women-statement-on-womens-rights-in-iran" target="_blank" rel="noopener noreferrer">UN Women · Statement on women’s rights in Iran</a></li>
+          <li><a href="https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/ffmi-iran/FFM-Iran-Update-13-September-2024.pdf" target="_blank" rel="noopener noreferrer">UN Fact-Finding Mission · September 2024 update</a></li>
+          <li><a href="https://www.cambridge.org/core/journals/international-journal-of-middle-east-studies/article/jin-jiyan-azadi-and-the-historical-erasure-of-kurds/ABD2F2585A3AD4F0FF3735CD0B4FECAA" target="_blank" rel="noopener noreferrer">Cambridge University Press · Jin, Jiyan, Azadi and Kurdish erasure</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <p data-i18n="footer.identity">Woman, Life, Freedom · Vienna · 2026</p>
-    <p data-i18n="footer.note">Event details subject to confirmation.</p>
+    <p data-i18n="footer.note">Remember. Listen. Connect.</p>
   </footer>
 
-  <script src="script.js?v=20260828-random-group-order"></script>
+  <script src="app.js?v=20260829-no-progress-strip"></script>
 </body>
 </html>
