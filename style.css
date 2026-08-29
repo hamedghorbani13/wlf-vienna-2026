@@ -1155,7 +1155,12 @@ html[lang="de"] .hero-values {
     line-height: 0.92;
   }
 
+  html[lang="en"] .hero-values {
+    font-size: clamp(2.35rem, 10vw, 3rem);
+  }
+
   html[lang="de"] .hero-values {
+    font-size: clamp(2rem, 8.8vw, 2.65rem);
     line-height: 1;
   }
 
@@ -1291,6 +1296,14 @@ html[lang="de"] .hero-values {
 @media (max-width: 390px) {
   .portrait-stage {
     grid-template-columns: minmax(0, 61%) minmax(0, 39%);
+  }
+
+  html[lang="en"] .hero-values {
+    font-size: clamp(2.15rem, 9.7vw, 2.5rem);
+  }
+
+  html[lang="de"] .hero-values {
+    font-size: clamp(1.82rem, 8.35vw, 2.15rem);
   }
 
   .portrait-hero-copy {
