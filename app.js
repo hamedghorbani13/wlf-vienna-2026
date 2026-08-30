@@ -90,6 +90,27 @@ function translate(key, fallback = "") {
   return entry[LANGUAGE_COLUMNS[currentLanguage]] || entry.english || fallback;
 }
 
+function setTextWithParagraphs(element, value) {
+  const paragraphs = String(value || "")
+    .split(/\r?\n+/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+
+  if (paragraphs.length < 2) {
+    element.textContent = paragraphs[0] || "";
+    return;
+  }
+
+  element.replaceChildren(
+    ...paragraphs.map((paragraph) => {
+      const span = document.createElement("span");
+      span.className = "i18n-paragraph";
+      span.textContent = paragraph;
+      return span;
+    })
+  );
+}
+
 function applyTranslations() {
   const isFarsi = currentLanguage === "fa";
   document.documentElement.lang = currentLanguage;
@@ -97,10 +118,10 @@ function applyTranslations() {
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const inlineFallback = element.dataset[LANGUAGE_COLUMNS[currentLanguage]];
-    element.textContent = translate(
+    setTextWithParagraphs(element, translate(
       element.dataset.i18n,
       inlineFallback || element.textContent
-    );
+    ));
   });
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
@@ -222,8 +243,10 @@ function createGroupCard(group) {
   }
 
   const description = document.createElement("p");
-  description.textContent =
-    group[LANGUAGE_COLUMNS[currentLanguage]] || group.english || "";
+  setTextWithParagraphs(
+    description,
+    group[LANGUAGE_COLUMNS[currentLanguage]] || group.english || ""
+  );
   details.append(description);
 
   const contactUrl = safeContact(group.contact_url);

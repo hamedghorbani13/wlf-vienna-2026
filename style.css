@@ -949,12 +949,55 @@ body {
 }
 
 .portrait-timeline {
-  margin-top: clamp(38px, 6vw, 64px);
+  display: grid;
+  gap: clamp(14px, 2vw, 20px);
+  margin-top: clamp(30px, 4vw, 48px);
+}
+
+.portrait-timeline::before,
+.portrait-timeline article::before {
+  display: none;
 }
 
 .portrait-timeline article {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
   min-height: 0;
-  padding-bottom: clamp(34px, 5vw, 50px);
+  padding: clamp(20px, 3vw, 30px);
+  border: 0;
+  border-radius: 14px;
+  background: var(--ink);
+  color: var(--paper-light);
+}
+
+.portrait-timeline article > div {
+  display: grid;
+  gap: 4px;
+}
+
+.portrait-timeline time,
+.portrait-timeline h3,
+.portrait-timeline p {
+  max-width: none;
+  margin: 0;
+  color: inherit;
+}
+
+.portrait-timeline time {
+  line-height: 1.2;
+}
+
+.life-copy .body-copy {
+  color: var(--ink);
+}
+
+.i18n-paragraph {
+  display: block;
+}
+
+.i18n-paragraph + .i18n-paragraph {
+  margin-top: 0.8em;
 }
 
 .gather-steps {
@@ -1074,6 +1117,11 @@ html[lang="fa"] .story-section h2 {
 html[lang="fa"] .story-section p {
   font-size: 1.05rem;
   line-height: 1.75;
+}
+
+html[lang="fa"] .story-section .kicker {
+  font-size: var(--kicker-size);
+  line-height: 1.45;
 }
 
 html[lang="fa"] .portrait-hero-content {

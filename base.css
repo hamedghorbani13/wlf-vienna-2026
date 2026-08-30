@@ -87,7 +87,7 @@
   --nav-weight: 700;
   --language-size: 0.82rem; /* EN / DE / FA */
   --language-weight: 700;
-  --kicker-size: clamp(1.05rem, 1.6vw, 1.3rem); /* 01 · A LIFE and other section labels */
+  --kicker-size: clamp(1.3rem, 2.2vw, 1.8rem); /* Numbered section labels */
   --kicker-weight: 700;
   --kicker-spacing: 0.12em;
   --kicker-rtl-spacing: 0.04em;
