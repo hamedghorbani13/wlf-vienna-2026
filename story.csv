@@ -23,8 +23,7 @@ hero.resistance,Resistance,Widerstand,مقاومت
 hero.purpose,"4th Anniversary of the “Woman, Life, Freedom” Movement and Commemoration of Jina (Mahsa) Amini","4. Jahrestag der Bewegung „Frau, Leben, Freiheit“ und Gedenken an Jina (Mahsa) Amini","چهارمین سالگرد جنبش «زن، زندگی، آزادی» و بزرگداشت ژینا (مهسا) امینی"
 hero.purpose_line_1,4th Anniversary of the,4. Jahrestag der Bewegung,چهارمین سالگرد جنبش
 hero.purpose_line_2,"“Woman, Life, Freedom” Movement","„Frau, Leben, Freiheit“","«زن، زندگی، آزادی»"
-hero.purpose_line_3,and Commemoration of,und Gedenken an,و بزرگداشت
-hero.purpose_line_4,Jina (Mahsa) Amini,Jina (Mahsa) Amini,ژینا (مهسا) امینی
+hero.purpose_line_3,and Commemoration of Jina (Mahsa) Amini,und Gedenken an Jina (Mahsa) Amini,و یادبود ژینا (مهسا) امینی
 common.continue,Continue,Weiter,ادامه
 jina.kicker,01 · A death that lives on,"01 · Ein Tod, der weiterlebt",۰۱ · مرگی جاودانه
 jina.title,Her name was Jina.,Ihr Name war Jina.,نامش ژینا بود.
@@ -38,10 +37,10 @@ In English: “Dear Jina, you will not die; your name will become a symbol.”",
 Auf Deutsch: „Liebe Jina, du wirst nicht sterben; dein Name wird zum Symbol.“","بر سنگ قبر او به کردی او نوشته شد:
 «ژینا گیان تو نامری، ناوت ئه‌بیته ره‌مز»
 ترجمه آن به فارسی: ژینا جان تو نمیمیری، نامت یک رمز می‌شود."
-slogan.kicker,02 · A slogan that sparked a movement,"02 · Ein Slogan, der eine Bewegung auslöste",۰۲ · شعاری که آغازگر یک جنبش شد
+slogan.kicker,02 · A slogan that sparked a movement,"02 · Ein Slogan, der eine Bewegung auslöste",۰۲ شعاری که آغازگر یک جنبش شد
 slogan.title,Jin. Jiyan. Azadî.,Jin. Jiyan. Azadî.,ژن. ژیان. ئازادی.
 slogan.origin,"At Jina's funeral in Saqqez on 17 September, the chant “Jin, Jiyan, Azadî” — Woman, Life, Freedom — rang out. Its Persian translation, “Zan, Zendegi, Azadi”, quickly became one of the most important slogans heard in streets across Iran, and before long it was echoing in other countries as well.","Bei Jinas Beerdigung in Saqqez am 17. September erklang der Ruf „Jin, Jiyan, Azadî“ – Frau, Leben, Freiheit. Seine persische Übersetzung, „Zan, Zendegi, Azadi“, wurde rasch zu einer der wichtigsten Parolen auf den Straßen im ganzen Iran und hallte schon bald auch in anderen Ländern wider.","در مراسم خاکسپاری ژینا در سقز، در ۱۷ سپتامبر، شعار «ژن، ژیان، ئازادی» ـ زن، زندگی، آزادی ـ سر داده شد. ترجمه فارسی این شعار، زن، زندگی، آزادی، به سرعت تبدیل به یکی از مهم ترین شعارهای خیابان‌های سراسر ایران شد و دیری نگذشت که در سایر کشورها نیز طنین انداخت."
-words.kicker,"03 · Three words, one horizon","03 · Drei Wörter, ein Horizont","۰۳ · سه واژه، یک افق"
+words.kicker,"03 · Three words, one horizon","03 · Drei Wörter, ein Horizont","۰۳  سه واژه، یک افق"
 words.title,Not a slogan to observe. A future to inhabit.,Kein Slogan zum Betrachten. Eine Zukunft zum Leben.,نه شعاری برای تماشا؛ آینده‌ای برای زیستن.
 words.woman.title,Woman,Frau,زن
 words.woman.body,"No emancipatory idea can remain silent on the question of women. As the first word of the slogan, “Woman” places this question at the forefront.",Keine emanzipatorische Idee kann zur Frauenfrage schweigen. Als erstes Wort des Slogans rückt „Frau“ diese Frage ins Zentrum.,"هیچ ایده رهایی‌بخشی نمی‌تواند در مورد مساله زنان سکوت کند. زن، کلمه اولِ این شعار مساله زنان را در صدر قرار می‌دهد."
@@ -49,46 +48,49 @@ words.life.title,Life,Leben,زندگی
 words.life.body,Liberation is born of thinking about life.,Befreiung entsteht aus dem Nachdenken über das Leben.,رهایی از دلِ اندیشیدن به زندگی زاده می‌شود.
 words.freedom.title,Freedom,Freiheit,آزادی
 words.freedom.body,Nothing should take freedom away.,Nichts darf die Freiheit beschneiden.,هیچ‌چیزی نباید آزادی را سلب کند.
-importance.kicker,04 · Why it matters,04 · Warum es wichtig ist,۰۴ · چرا مهم است
+importance.kicker,04 · Why it matters,04 · Warum es wichtig ist,۰۴  چرا مهم است
 importance.title,Because freedom is measured in everyday life.,Weil Freiheit sich im Alltag zeigt.,زیرا آزادی در زندگی روزمره سنجیده می‌شود.
-importance.body,"The movement placed women and girls at the centre while connecting demands for gender equality, dignity, justice, and freedom across communities and generations.","Die Bewegung stellte Frauen und Mädchen ins Zentrum und verband Forderungen nach Geschlechtergerechtigkeit, Würde, Gerechtigkeit und Freiheit über Gemeinschaften und Generationen hinweg.","این جنبش زنان و دختران را در مرکز قرار داد و خواسته‌های برابری جنسیتی، کرامت، عدالت و آزادی را میان جامعه‌ها و نسل‌ها به هم پیوند زد."
+importance.body,"Because women’s issues are central to this movement, it marks a turning point in Iranian women’s long and organized struggle. The movement made women’s issues in Iran a major subject of discussion in both public and private spheres and brought about a revolution in how Iran’s traditional society thinks about women.
+Although it is still not possible to say that women’s issues in Iran have been resolved, the movement’s potential gives us hope that resolving them — and reclaiming life — is possible. We believe that the Woman, Life, Freedom movement has not ended; on the contrary, it is a sapling that is growing stronger.","Da die Frauenfrage im Zentrum dieser Bewegung steht, markiert sie einen Wendepunkt in den historisch gewachsenen und organisierten Kämpfen der Frauen im Iran. Die Bewegung machte die Frauenfrage im Iran zu einem wichtigen Thema in öffentlichen wie privaten Kreisen und bewirkte eine Revolution in der Art und Weise, wie die traditionelle iranische Gesellschaft über Frauen denkt.
+Auch wenn noch nicht gesagt werden kann, dass die Frauenfrage im Iran gelöst ist, geben uns die Potenziale dieser Bewegung Hoffnung darauf, dass eine Lösung — und die Rückeroberung des Lebens — möglich sind. Wir sind überzeugt, dass die Bewegung Frau, Leben, Freiheit nicht beendet ist; im Gegenteil: Sie ist ein Setzling, der immer kräftiger heranwächst.","به‌دلیل مرکزیتِ مساله زنان در این جنبش، این جنبش نقطه عطفی در مبارزاتِ تاریخی و ساختارمندِ زنان ایران به‌حساب می‌آید. این جنبش، مساله زنان در ایران را به یکی از بحث‌های مهم در محافل عمومی و خصوصی تبدیل کرد و موفق شد انقلابی را در نوعِ اندیشیدنِ جامعه سنتی ایران به مساله زنان رقم بزند.
+اگرچه هنوز نمی‌توان گفت که مساله زنان در ایران حل شده است، اما پتانسیل‌های این جنبش ما را به امکان‌پذیر بودنِ حلِ مساله زنان، و بازپس‌گیری زندگی امیدوار می‌کند. ما اعتقاد داریم که نه تنها جنبشِ زن، زندگی، آزادی به پایان نرسیده است، بلکه اتفاقاً این جنبش نهالی است که در حالِ تنومندشدن است. "
 importance.voice.title,Voice,Stimme,صدا
 importance.voice.body,People claimed the right to tell their own stories.,"Menschen beanspruchten das Recht, ihre eigenen Geschichten zu erzählen.",مردم حق روایت کردن داستان خود را طلب کردند.
 importance.solidarity.title,Solidarity,Solidarität,همبستگی
 importance.solidarity.body,A Kurdish cry became a shared language without losing the importance of its roots.,"Ein kurdischer Ruf wurde zu einer gemeinsamen Sprache, ohne dass seine Wurzeln an Bedeutung verlieren.","فریادی کُردی به زبانی مشترک بدل شد، بی‌آنکه اهمیت ریشه‌هایش از میان برود."
 importance.future.title,Future,Zukunft,آینده
 importance.future.body,"The movement asks not only what must end, but what kind of life can begin.","Die Bewegung fragt nicht nur, was enden muss, sondern auch, welches Leben beginnen kann.",جنبش فقط نمی‌پرسد چه باید پایان یابد؛ می‌پرسد چه نوع زندگی می‌تواند آغاز شود.
-timeline.kicker_compact,03 · A movement in time,03 · Eine Bewegung in der Zeit,۰۳ · جنبشی در گذر زمان
+timeline.kicker_compact,03 · A movement in time,03 · Eine Bewegung in der Zeit,۰۳  جنبشی در گذر زمان
 timeline.title,From one name to millions of voices.,Von einem Namen zu Millionen Stimmen.,از یک نام تا میلیون‌ها صدا.
 timeline.intro,"At the heart of the Woman, Life, Freedom movement are thousands of stories and events. The timeline below highlights some of the movement's turning points.","Im Herzen der Bewegung Frau, Leben, Freiheit stehen Tausende Geschichten und Ereignisse. Die folgende Zeitleiste zeigt einige Wendepunkte dieser Bewegung.","در دلِ جنبشِ زن، زندگی، آزادی، هزاران روایت و اتفاق وجود دارد. تاریخی که در زیر آمده؛ بعضی از نقاطِ عطف این جنبش را نشان می‌دهد."
 timeline.roots.date,Before 2022,Vor 2022,پیش از ۲۰۲۲
 timeline.roots.title,The words already carried history.,Die Worte trugen bereits Geschichte.,این واژه‌ها پیشاپیش تاریخی با خود داشتند.
 timeline.roots.body,"“Jin, Jiyan, Azadî” emerged from decades of Kurdish women’s organizing and thought.","„Jin, Jiyan, Azadî“ entstand aus Jahrzehnten kurdischer Frauenorganisierung und politischen Denkens.","«ژن، ژیان، ئازادی» از دهه‌ها سازمان‌دهی و اندیشه زنان کُرد برخاست."
-timeline.detained.date,13 September 2022,13. September 2022,۱۳ سپتامبر ۲۰۲۲
+timeline.detained.date,13-Sep-22,13. September 2022,۱۳ سپتامبر ۲۰۲۲
 timeline.detained.title,Jina is detained in Tehran.,Jina wird in Teheran festgenommen.,ژینا در تهران بازداشت می‌شود.
 timeline.detained.body,The “morality police” detained her over compulsory veiling rules.,Die sogenannte Sittenpolizei nahm sie wegen der Zwangsverschleierungsvorschriften fest.,گشت ارشاد او را به‌دلیل قوانین حجاب اجباری بازداشت می‌کند.
-timeline.death.date,16 September 2022,16. September 2022,۱۶ سپتامبر ۲۰۲۲
+timeline.death.date,16-Sep-22,16. September 2022,۱۶ سپتامبر ۲۰۲۲
 timeline.death.title,Jina's heart stops.,Jinas Herz hört auf zu schlagen.,قلبِ ژینا از حرکت ایستاد.
 timeline.death.body,Her death becomes the spark for nationwide protest.,Ihr Tod wird zum Auslöser landesweiter Proteste.,"جان‌باختنِ ژینا، جرقه اعتراض‌های سراسری می‌شود."
-timeline.funeral.date,17 September 2022,17. September 2022,۱۷ سپتامبر ۲۰۲۲
+timeline.funeral.date,17-Sep-22,17. September 2022,۱۷ سپتامبر ۲۰۲۲
 timeline.funeral.title,"The slogan Woman, Life, Freedom echoes through Saqqez.","Der Ruf Frau, Leben, Freiheit hallt durch Saqqez.","شعارِ زن، زندگی، آزادی در سقز طنین می‌اندازد."
 timeline.funeral.body,"At her funeral, “Jin, Jiyan, Azadî” is chanted, and the slogan quickly gains widespread support across the country.","Bei ihrer Beerdigung wird „Jin, Jiyan, Azadî“ gerufen, und die Parole findet rasch im ganzen Land breiten Zuspruch.","در خاکسپاری او «ژن، ژیان، ئازادی» سر داده می‌شود و این شعار به‌سرعت در سرتاسر کشور مورد اقبال عمومی قرار می‌گیرد."
 timeline.streets.date,Autumn 2022,Herbst 2022,پاییز ۲۰۲۲
 timeline.streets.title,The uprising spreads.,Der Aufstand breitet sich aus.,خیزش گسترش می‌یابد.
 timeline.streets.body,Women and young people were at the heart of these protests.,Frauen und junge Menschen standen im Zentrum dieser Proteste.,زنان و جوانان در قلبِ این اعتراضات حضور داشتند.
-timeline.un.date,24 November 2022,24. November 2022,۲۴ نوامبر ۲۰۲۲
+timeline.un.date,24-Nov-22,24. November 2022,۲۴ نوامبر ۲۰۲۲
 timeline.un.title,An international investigation begins.,Eine internationale Untersuchung beginnt.,یک تحقیق بین‌المللی آغاز می‌شود.
 timeline.un.body,The UN Human Rights Council establishes an independent fact-finding mission on violations connected to the protests.,Der UN-Menschenrechtsrat setzt eine unabhängige Untersuchungskommission zu den mit den Protesten verbundenen Menschenrechtsverletzungen ein.,شورای حقوق بشر سازمان ملل هیئت حقیقت‌یاب مستقلی درباره نقض‌های مرتبط با اعتراض‌ها تشکیل می‌دهد.
 timeline.repression.date,December 2022 onward,Ab Dezember 2022,از دسامبر ۲۰۲۲
 timeline.repression.title,Repression intensifies.,Die Repression verschärft sich.,سرکوب شدت می‌گیرد.
 timeline.repression.body,"Arrests, torture, unfair trials, and protest-related executions are used to instil fear; resistance continues in public and private life.","Festnahmen, Folter, unfaire Verfahren und protestbezogene Hinrichtungen sollen Angst verbreiten; der Widerstand setzt sich im öffentlichen und privaten Leben fort.","بازداشت، شکنجه، دادگاه‌های ناعادلانه و اعدام‌های مرتبط با اعتراض برای ایجاد ترس به کار می‌رود؛ مقاومت در زندگی عمومی و خصوصی ادامه می‌یابد."
-timeline.findings.date,March 2024,März 2024,مارس ۲۰۲۴
+timeline.findings.date,Mar-24,März 2024,مارس ۲۰۲۴
 timeline.findings.title,The UN mission publishes its findings.,Die UN-Kommission veröffentlicht ihre Ergebnisse.,هیئت حقیقت‌یابِ سازمان ملل یافته‌های خود را منتشر می‌کند.
 timeline.findings.body,The mission holds the government responsible for Jina's unlawful death following physical violence and concludes that the government's actions constituted crimes against humanity.,"Die Mission macht die Regierung für Jinas unrechtmäßigen Tod infolge körperlicher Gewalt verantwortlich und kommt zu dem Schluss, dass das Vorgehen der Regierung Verbrechen gegen die Menschlichkeit darstellte.","هیئت، حکومت را مسئول مرگ غیرقانونی ژینا در پی خشونت فیزیکی می‌داند و نتیجه می‌گیرد که اقدامات حکومت شامل جنایت علیه بشریت بوده است."
-timeline.vienna.date,15 September 2026,15. September 2026,۱۵ سپتامبر ۲۰۲۶
+timeline.vienna.date,15-Sep-26,15. September 2026,۱۵ سپتامبر ۲۰۲۶
 timeline.vienna.title,We gather in Vienna.,Wir kommen in Wien zusammen.,در وین گرد هم می‌آییم.
 timeline.vienna.body,"Four years after this movement began, we come together to remember, connect, and continue the journey. Groups, artists, activists, and members of the public meet in a shared civic space.","Vier Jahre nach Beginn dieser Bewegung kommen wir zusammen, um uns zu erinnern, Verbindungen zu knüpfen und den Weg gemeinsam fortzusetzen. Gruppen, Kunstschaffende, Aktivist:innen und Bürger:innen begegnen einander in einem gemeinsamen zivilgesellschaftlichen Raum.","چهار سال بعد از آغاز این جنبش کنار، برای به یادآوردن، پیوند خوردن، و ادامه مسیر کنار هم قرار میگیریم. گروه‌ها، هنرمندان، کنشگران و شهروندان در فضایی مدنی کنار هم می‌آیند."
-gather.kicker_compact,04 · From remembrance to connection,04 · Von der Erinnerung zur Verbundenheit,۰۴ · از یادآوری تا پیوند
+gather.kicker_compact,04 · From remembrance to connection,04 · Von der Erinnerung zur Verbundenheit,۰۴  از یادآوری تا پیوند
 gather.title,What can you expect at the event on 15 September?,Was erwartet Sie bei der Veranstaltung am 15. September?,در برنامه 15 سپتامبر چه خواهید دید؟
 gather.intro,"We, a collective of human rights, civic, and political groups, are coming together to talk with you in a welcoming atmosphere, to remember, strengthen our bonds, and reflect on how to continue the resistance.","Wir, ein Zusammenschluss aus Menschenrechtsgruppen sowie zivilgesellschaftlichen und politischen Gruppen, kommen zusammen, um in einer offenen, herzlichen Atmosphäre mit Ihnen ins Gespräch zu kommen, uns zu erinnern, unsere Verbindungen zu stärken und über die Fortsetzung des Widerstands nachzudenken.","ما، جمعی از گروه‌های حقوق‌بشری، مدنی و سیاسی گرد هم می‌آییم تا در فضایی صمیمانه با شما گفتگو کنیم، به یاد بیاوریم، پیوندهایمان را تقویت کنیم، و به ادامه مقاومت بیاندیشیم."
 gather.remember.title,Memory,Erinnerung,یاد
@@ -98,7 +100,7 @@ gather.listen.body,We come together and renew our bonds.,Wir kommen zusammen und
 gather.connect.title,Resistance,Widerstand,مقاومت
 gather.connect.body,"Together, we reflect on how to keep resisting in pursuit of our goals.","Gemeinsam denken wir darüber nach, wie wir den Widerstand für unsere Ziele fortsetzen können.","در کنار هم، به مقاومت برای اهداف‌مان فکر می‌کنیم"
 event.date.label,Date,Datum,تاریخ
-event.date.value,15 September 2026,15. September 2026,۱۵ سپتامبر ۲۰۲۶
+event.date.value,15-Sep-26,15. September 2026,۱۵ سپتامبر ۲۰۲۶
 event.time.label,Time,Zeit,زمان
 event.time.value,14:00–19:00,14:00–19:00,۱۴:۰۰ تا ۱۹:۰۰
 event.place.label,Place,Ort,مکان
@@ -111,7 +113,7 @@ calendar.outlook,Outlook / Microsoft 365,Outlook / Microsoft 365,اوت‌لوک
 calendar.apple,Apple / other calendar,Apple / anderer Kalender,اپل / تقویم دیگر
 common.scroll_down,Scroll down,Nach unten scrollen,به پایین بروید
 accessibility.scroll_down,Scroll to the next section,Zum nächsten Abschnitt scrollen,رفتن به بخش بعدی
-groups.kicker_compact,05 · Meet some of the participating groups,05 · Einige der teilnehmenden Gruppen kennenlernen,۰۵ · آشنایی با بعضی از گروه‌های شرکت‌کننده
+groups.kicker_compact,05 · Meet some of the participating groups,05 · Einige der teilnehmenden Gruppen kennenlernen,۰۵ آشنایی با بعضی از گروه‌های شرکت‌کننده
 groups.title,Active and dynamic organizations give us greater hope to keep going.,"Lebendige und aktive Organisationen geben uns mehr Hoffnung, weiterzumachen.","نهادهای پویا و فعال، ما را به ادامه‌دادن امیدوارتر می‌کنند."
 groups.intro,Select a card to connect with the groups.,"Wählen Sie eine Karte aus, um mit den Gruppen in Kontakt zu treten.","برای ارتباط با گروه‌ها، کارت‌ها را انتخاب کنید."
 groups.view,View story,Mehr erfahren,مشاهده روایت

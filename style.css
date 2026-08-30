@@ -3,7 +3,7 @@
   min-height: 100svh;
   overflow: hidden;
   background: var(--ink);
-  color: #ef3f2d;
+  color: var(--paper-light);
 }
 
 .portrait-hero .site-nav {
@@ -11,7 +11,7 @@
 }
 
 .portrait-hero .language-switcher button[aria-pressed="true"] {
-  background: #ef3f2d;
+  background: var(--paper-light);
   color: var(--ink);
 }
 
@@ -283,7 +283,8 @@ html[dir="rtl"] .hero-calendar {
   grid-column: 2;
   max-width: 520px;
   padding: 26px;
-  border-top: 5px solid var(--ink);
+  border: 0;
+  border-radius: 14px;
   background: rgba(16, 12, 10, 0.07);
 }
 
@@ -713,7 +714,7 @@ body {
   background: var(--ink);
   box-shadow: 0 0 0 100vmax var(--ink);
   clip-path: inset(0 -100vmax);
-  color: #ef3f2d;
+  color: var(--paper-light);
 }
 
 .site-nav,
@@ -945,7 +946,11 @@ body {
   margin-top: clamp(34px, 5vw, 58px);
   padding-top: 0;
   border-top: 0;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+html[lang="fa"] .story-section .movement-explainer {
+  font-weight: 400;
 }
 
 .portrait-timeline {
@@ -998,6 +1003,29 @@ body {
 
 .i18n-paragraph + .i18n-paragraph {
   margin-top: 0.8em;
+}
+
+/* Paragraph wrappers must inherit B Mitra; the global Farsi span rule uses B Titr. */
+html[lang="fa"] .story-section p .i18n-paragraph {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* Long-form copy is justified; short labels and headings keep their natural alignment. */
+.story-section :is(
+  .lead,
+  .body-copy,
+  .movement-explainer,
+  .name-note p,
+  .word-band p,
+  .portrait-timeline p,
+  .gather-steps p,
+  .group-card-details > p:not(.group-address)
+) {
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .gather-steps {
@@ -1071,11 +1099,36 @@ html[lang="fa"] .sources-list a {
 }
 
 .word-bands,
-.gather-steps,
-.event-facts {
+.gather-steps {
   gap: clamp(16px, 2vw, 22px);
   border: 0;
   background: transparent;
+}
+
+/* Event information sits in its own paper section; each fact remains a card. */
+.event-facts {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 22px);
+  margin-top: 0;
+  overflow: visible;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.event-fact {
+  min-width: 0;
+  padding: clamp(20px, 3vw, 30px);
+  border: 0;
+  border-radius: 14px;
+  background: var(--ink);
+  color: var(--paper-light);
+}
+
+.event-details-chapter .event-button {
+  margin-top: clamp(20px, 3vw, 28px);
 }
 
 .word-bands {
@@ -1171,6 +1224,10 @@ html[lang="de"] .hero-values {
 
   .nav-links a {
     font-size: 0.88rem;
+  }
+
+  .event-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1300,10 +1357,13 @@ html[lang="de"] .hero-values {
 
   .word-bands,
   .gather-steps,
-  .event-facts,
   .sources-list,
   .contact-grid {
     gap: 16px;
+  }
+
+  .event-facts {
+    grid-template-columns: 1fr;
   }
 
   .gather-steps article {
