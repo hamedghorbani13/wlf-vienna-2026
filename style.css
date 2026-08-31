@@ -759,8 +759,28 @@ html {
 }
 
 .brand {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
   font-size: var(--brand-size);
-  line-height: 1.1;
+  line-height: 0;
+}
+
+.brand img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+html[dir="rtl"] .site-nav {
+  direction: ltr;
+}
+
+html[dir="rtl"] .nav-links {
+  direction: rtl;
 }
 
 .nav-links a {
@@ -1358,10 +1378,6 @@ html[lang="de"] .hero-values {
     min-width: 30px;
     min-height: 30px;
     padding-inline: 4px;
-  }
-
-  html[lang="fa"] .brand {
-    transform: translateX(-24px);
   }
 
   html[dir="ltr"] .language-switcher {
