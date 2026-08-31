@@ -137,6 +137,24 @@ html[lang="fa"] .hero-values {
   list-style: none;
 }
 
+.calendar-menu {
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+}
+
+.calendar-menu[open] {
+  z-index: 1001;
+}
+
+.calendar-menu > summary.button {
+  min-height: 58px;
+  padding-inline: clamp(26px, 3vw, 36px);
+  color: var(--paper-light);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 800;
+}
+
 .calendar-menu summary::-webkit-details-marker {
   display: none;
 }
@@ -166,6 +184,7 @@ html[lang="fa"] .hero-values {
   border-radius: 14px;
   background: rgba(243, 228, 207, 0.98);
   box-shadow: 0 18px 50px rgba(16, 12, 10, 0.24);
+  z-index: 1002;
 }
 
 .calendar-options a {
@@ -701,13 +720,20 @@ body {
 }
 
 .portrait-hero {
+  z-index: 2000;
   min-height: 100svh;
   overflow: visible;
+  padding-top: 76px;
   background: transparent;
 }
 
 .portrait-hero .site-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1100;
   min-height: 76px;
+  margin: 0;
   padding-block: 12px;
   border: 0 !important;
   border-bottom: 0 !important;
@@ -715,6 +741,15 @@ body {
   box-shadow: 0 0 0 100vmax var(--ink);
   clip-path: inset(0 -100vmax);
   color: var(--paper-light);
+  transform: translateX(-50%);
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+.story-section:has(.calendar-menu[open]) {
+  z-index: 1000;
 }
 
 .site-nav,
@@ -1127,7 +1162,7 @@ html[lang="fa"] .sources-list a {
   color: var(--paper-light);
 }
 
-.event-details-chapter .event-button {
+.event-details-chapter .event-calendar {
   margin-top: clamp(20px, 3vw, 28px);
 }
 
@@ -1196,6 +1231,14 @@ html[lang="de"] .hero-values {
 }
 
 @media (max-width: 900px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+
+  .portrait-hero {
+    padding-top: 106px;
+  }
+
   .page-backdrop {
     background-image:
       linear-gradient(rgba(188, 44, 28, 0.04), rgba(16, 12, 10, 0.12)),
@@ -1232,6 +1275,14 @@ html[lang="de"] .hero-values {
 }
 
 @media (max-width: 600px) {
+  html {
+    scroll-padding-top: 116px;
+  }
+
+  .portrait-hero {
+    padding-top: 102px;
+  }
+
   .page-backdrop {
     background-image:
       linear-gradient(rgba(188, 44, 28, 0.03), rgba(16, 12, 10, 0.1)),
