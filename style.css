@@ -1208,7 +1208,16 @@ html[lang="fa"] .sources-list a {
 }
 
 .contact-grid {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-card-link {
+  text-decoration: none;
+}
+
+.contact-card-link:hover,
+.contact-card-link:focus-visible {
+  background: #201916;
 }
 
 html[lang="fa"] .hero-values {
@@ -1282,6 +1291,7 @@ html[lang="de"] .hero-values {
   }
 
   .nav-links {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
   }
 
@@ -1427,6 +1437,10 @@ html[lang="de"] .hero-values {
   .sources-list,
   .contact-grid {
     gap: 16px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .event-facts {

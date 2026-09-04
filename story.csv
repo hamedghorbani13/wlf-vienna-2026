@@ -14,6 +14,7 @@ nav.groups,Groups,Gruppen,گروه‌ها
 nav.about,About,Über,درباره
 nav.program,Program,Programm,برنامه
 nav.location,Location,Ort,مکان
+nav.contact,Contact us,Kontakt,تماس با ما
 common.four_years,FOUR YEARS ON,VIER JAHRE DANACH,چهار سال بعد
 common.event_line,Vienna · 15 September 2026 · 14:00–19:00,Wien · 15. September 2026 · 14:00–19:00,وین · ۱۵ سپتامبر ۲۰۲۶ · ۱۴:۰۰ تا ۱۹:۰۰
 common.begin,Begin the story,Geschichte beginnen,آغاز روایت
@@ -125,7 +126,7 @@ contact.title,Contact us.,Kontaktieren Sie uns.,با ما تماس بگیرید.
 contact.email.label,Email,E-Mail,ایمیل
 contact.email.value,contact@womanlifefreedomvienna.com,contact@womanlifefreedomvienna.com,contact@womanlifefreedomvienna.com
 contact.instagram.label,Instagram,Instagram,اینستاگرام
-contact.instagram.value,[@instagram],[@instagram],[@instagram]
+contact.instagram.value,@solidarity_for_liberty,@solidarity_for_liberty,@solidarity_for_liberty
 sources.kicker,Sources & context,Quellen & Kontext,منابع و زمینه
 sources.title,Read the sources and reports used.,Lesen Sie die verwendeten Quellen und Berichte.,منابع و گزارش‌های استفاده شده را بخوانید
 sources.intro,"This story is a concise interpretation, not a complete historical record. The factual timeline is grounded in the sources below.","Diese Geschichte ist eine knappe Einordnung, kein vollständiger historischer Bericht. Die faktische Zeitleiste stützt sich auf die folgenden Quellen.","این روایت برداشتی فشرده است، نه گزارشی کامل از تاریخ. گاه‌شمار بر منابع زیر استوار است."
